@@ -14,18 +14,22 @@
     </div>
     <div class="showcase-grid-4">
       <a class="showcase-card web-showcase-card reveal portfolio-lightbox-trigger" href="javascript:void(0)" data-img="assets/images/websiteockup/web1.webp" data-title="Trusted Roofing & Contracting Platform" data-cat="WEB DESIGN" data-desc="Conversion-focused corporate website with clear service highlights, safety commitments, and online quote booking.">
+        <div class="mac-bar"><div class="mac-dots"><span class="mac-dot mac-red"></span><span class="mac-dot mac-yellow"></span><span class="mac-dot mac-green"></span></div><div class="mac-url-bar">urdigitaltech.com/roofing-portal</div></div>
         <img src="assets/images/websiteockup/web1.webp" alt="Trusted Roofing & Contracting Platform" loading="lazy">
         <div class="showcase-card-label">Roofing & Contracting Portal</div>
       </a>
       <a class="showcase-card web-showcase-card reveal portfolio-lightbox-trigger" href="javascript:void(0)" data-img="assets/images/websiteockup/web2.webp" data-title="Travel & Booking Experience" data-cat="WEB DESIGN" data-desc="Vibrant travel agency platform featuring package discovery, flight booking, and flexible installment payment options.">
+        <div class="mac-bar"><div class="mac-dots"><span class="mac-dot mac-red"></span><span class="mac-dot mac-yellow"></span><span class="mac-dot mac-green"></span></div><div class="mac-url-bar">urdigitaltech.com/travel-booking</div></div>
         <img src="assets/images/websiteockup/web2.webp" alt="Travel & Booking Experience" loading="lazy">
         <div class="showcase-card-label">Travel & Booking Platform</div>
       </a>
       <a class="showcase-card web-showcase-card reveal portfolio-lightbox-trigger" href="javascript:void(0)" data-img="assets/images/websiteockup/web3.webp" data-title="Conversion-Led Studio UI" data-cat="WEB DESIGN" data-desc="Minimalist bold typography web platform designed to turn site visitors into qualified booked clients.">
+        <div class="mac-bar"><div class="mac-dots"><span class="mac-dot mac-red"></span><span class="mac-dot mac-yellow"></span><span class="mac-dot mac-green"></span></div><div class="mac-url-bar">urdigitaltech.com/studio-agency</div></div>
         <img src="assets/images/websiteockup/web3.webp" alt="Conversion-Led Studio UI" loading="lazy">
         <div class="showcase-card-label">Studio & Agency Website</div>
       </a>
       <a class="showcase-card web-showcase-card reveal portfolio-lightbox-trigger" href="javascript:void(0)" data-img="assets/images/websiteockup/web4.webp" data-title="FuzionDev UI/UX & Branding Platform" data-cat="WEB DESIGN" data-desc="Dark-themed SaaS platform highlighting software solutions, design systems, and client reviews.">
+        <div class="mac-bar"><div class="mac-dots"><span class="mac-dot mac-red"></span><span class="mac-dot mac-yellow"></span><span class="mac-dot mac-green"></span></div><div class="mac-url-bar">urdigitaltech.com/saas-tech-platform</div></div>
         <img src="assets/images/websiteockup/web4.webp" alt="FuzionDev UI/UX Platform" loading="lazy">
         <div class="showcase-card-label">SaaS & Tech Platform</div>
       </a>
@@ -46,18 +50,22 @@
     </div>
     <div class="showcase-grid-4">
       <a class="showcase-card branding-showcase-card reveal portfolio-lightbox-trigger" href="javascript:void(0)" data-img="assets/images/branding/branding1.webp" data-title="Rival Brand Identity System" data-cat="BRANDING" data-desc="Coordinated brand guidelines, stationery, merchandise, and mobile app UI style guide.">
+        <div class="mac-bar"><div class="mac-dots"><span class="mac-dot mac-red"></span><span class="mac-dot mac-yellow"></span><span class="mac-dot mac-green"></span></div><div class="mac-url-bar">urdigitaltech.com/rival-toolkit</div></div>
         <img src="assets/images/branding/branding1.webp" alt="Rival Brand Identity System" loading="lazy">
         <div class="showcase-card-label">Rival Identity Toolkit</div>
       </a>
       <a class="showcase-card branding-showcase-card reveal portfolio-lightbox-trigger" href="javascript:void(0)" data-img="assets/images/branding/branding2.webp" data-title="Seto Visual Architecture" data-cat="BRANDING" data-desc="Modern visual direction, typography suite, and digital campaign collateral.">
+        <div class="mac-bar"><div class="mac-dots"><span class="mac-dot mac-red"></span><span class="mac-dot mac-yellow"></span><span class="mac-dot mac-green"></span></div><div class="mac-url-bar">urdigitaltech.com/seto-system</div></div>
         <img src="assets/images/branding/branding2.webp" alt="Seto Visual Architecture" loading="lazy">
         <div class="showcase-card-label">Seto Visual System</div>
       </a>
       <a class="showcase-card branding-showcase-card reveal portfolio-lightbox-trigger" href="javascript:void(0)" data-img="assets/images/branding/branding3.webp" data-title="Cultt Agri-Tech Brand System" data-cat="BRANDING" data-desc="Organic brand identity kit including packaging mockup, social templates, and tote bag designs.">
+        <div class="mac-bar"><div class="mac-dots"><span class="mac-dot mac-red"></span><span class="mac-dot mac-yellow"></span><span class="mac-dot mac-green"></span></div><div class="mac-url-bar">urdigitaltech.com/cultt-agri</div></div>
         <img src="assets/images/branding/branding3.webp" alt="Cultt Agri-Tech Brand System" loading="lazy">
         <div class="showcase-card-label">Cultt Agri Brand</div>
       </a>
       <a class="showcase-card branding-showcase-card reveal portfolio-lightbox-trigger" href="javascript:void(0)" data-img="assets/images/branding/branding4.webp" data-title="Smash Sports & Athletic Branding" data-cat="BRANDING" data-desc="Bold sports brand identity, court promotional posters, and athletic merchandise graphics.">
+        <div class="mac-bar"><div class="mac-dots"><span class="mac-dot mac-red"></span><span class="mac-dot mac-yellow"></span><span class="mac-dot mac-green"></span></div><div class="mac-url-bar">urdigitaltech.com/smash-sports</div></div>
         <img src="assets/images/branding/branding4.webp" alt="Smash Sports & Athletic Branding" loading="lazy">
         <div class="showcase-card-label">Smash Sports Identity</div>
       </a>
@@ -78,18 +86,22 @@
     </div>
     <div class="showcase-grid-4">
       <a class="showcase-card logo-showcase-card reveal portfolio-lightbox-trigger" href="javascript:void(0)" data-img="assets/images/Logo and designs/logo1.webp" data-title="Character & Urban Concept Art" data-cat="CREATIVE DESIGN" data-desc="Custom anime-inspired character illustration with atmospheric background detail.">
+        <div class="mac-bar"><div class="mac-dots"><span class="mac-dot mac-red"></span><span class="mac-dot mac-yellow"></span><span class="mac-dot mac-green"></span></div><div class="mac-url-bar">urdigitaltech.com/character-design</div></div>
         <img src="assets/images/Logo and designs/logo1.webp" alt="Character Designing" loading="lazy">
         <div class="showcase-card-label">Character Designing</div>
       </a>
       <a class="showcase-card logo-showcase-card reveal portfolio-lightbox-trigger" href="javascript:void(0)" data-img="assets/images/Logo and designs/logo2.webp" data-title="Children's Book Style Artwork" data-cat="CREATIVE DESIGN" data-desc="Soft, playful character illustration tailored for digital storybooks and youth media.">
+        <div class="mac-bar"><div class="mac-dots"><span class="mac-dot mac-red"></span><span class="mac-dot mac-yellow"></span><span class="mac-dot mac-green"></span></div><div class="mac-url-bar">urdigitaltech.com/children-books</div></div>
         <img src="assets/images/Logo and designs/logo2.webp" alt="Children Book Style" loading="lazy">
         <div class="showcase-card-label">Children Book Style</div>
       </a>
       <a class="showcase-card logo-showcase-card reveal portfolio-lightbox-trigger" href="javascript:void(0)" data-img="assets/images/Logo and designs/logo3.webp" data-title="Fantasy Hero Illustration" data-cat="CREATIVE DESIGN" data-desc="Vibrant fantasy character art created for gaming avatars and promotional merchandise.">
+        <div class="mac-bar"><div class="mac-dots"><span class="mac-dot mac-red"></span><span class="mac-dot mac-yellow"></span><span class="mac-dot mac-green"></span></div><div class="mac-url-bar">urdigitaltech.com/fantasy-illustrations</div></div>
         <img src="assets/images/Logo and designs/logo3.webp" alt="Fantasy Illustrations" loading="lazy">
         <div class="showcase-card-label">Fantasy Illustrations</div>
       </a>
       <a class="showcase-card logo-showcase-card reveal portfolio-lightbox-trigger" href="javascript:void(0)" data-img="assets/images/Logo and designs/logo4.webp" data-title="Cinematic Scene Illustration" data-cat="CREATIVE DESIGN" data-desc="Moonlight scene digital painting with detailed character rendering and lighting effects.">
+        <div class="mac-bar"><div class="mac-dots"><span class="mac-dot mac-red"></span><span class="mac-dot mac-yellow"></span><span class="mac-dot mac-green"></span></div><div class="mac-url-bar">urdigitaltech.com/scene-illustration</div></div>
         <img src="assets/images/Logo and designs/logo4.webp" alt="Scene Illustration" loading="lazy">
         <div class="showcase-card-label">Scene Illustration</div>
       </a>
@@ -107,7 +119,53 @@
 <section><div class="container"><div class="section-head reveal"><div class="eyebrow">How we work</div><h2>A practical path from idea to measurable result.</h2></div><div class="process-grid"><article class="process-card reveal"><span>01</span><h3>Discover</h3><p>We learn your audience, priorities, constraints, and current systems.</p></article><article class="process-card reveal"><span>02</span><h3>Plan</h3><p>We shape the scope, timeline, content needs, and success measures.</p></article><article class="process-card reveal"><span>03</span><h3>Build</h3><p>We design and develop in reviewable stages with consistent updates.</p></article><article class="process-card reveal"><span>04</span><h3>Validate</h3><p>We test responsiveness, forms, accessibility, SEO, and key user paths.</p></article><article class="process-card reveal"><span>05</span><h3>Launch</h3><p>We deploy, monitor, document, and support your team through handoff.</p></article></div></div></section>
 
 <?php $reviews=require 'reviews-data.php'; ?>
-<section class="reviews-section"><div class="container"><div class="section-head reveal"><div class="eyebrow">Google reviews</div><h2>Real feedback from businesses we support.</h2></div><div class="review-shell reveal" data-review-carousel><div class="review-head"><div class="review-score"><strong>5.0</strong><div><div class="review-stars">★★★★★</div><span>URDigital Tech on Google</span></div></div><a class="btn btn-ghost" href="https://www.google.com/search?q=URDigital+Tech+Reviews" target="_blank" rel="noopener">View all Google reviews ↗</a></div><div class="review-viewport"><div class="review-track"><?php foreach($reviews as $r): $initials=implode('',array_map(fn($x)=>strtoupper($x[0]),array_slice(explode(' ',$r['name']),0,2))); ?><article class="google-review"><header><span class="review-avatar"><?= htmlspecialchars($initials) ?></span><div><strong><?= htmlspecialchars($r['name']) ?></strong><small><?= htmlspecialchars($r['date']) ?></small><div class="review-stars">★★★★★</div></div></header><p><?= htmlspecialchars($r['text']) ?></p><span class="google-mark">G</span></article><?php endforeach; ?></div></div><div class="carousel-controls"><button class="carousel-prev" aria-label="Previous reviews">←</button><div class="carousel-dots" aria-label="Review pages"></div><button class="carousel-next" aria-label="Next reviews">→</button></div></div></div></section>
+<section class="reviews-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Google reviews</div>
+      <h2>Real feedback from businesses we support.</h2>
+    </div>
+  </div>
+  <div class="review-fullwidth-wrap reveal" data-review-carousel>
+    <div class="container">
+      <div class="review-head">
+        <div class="review-score">
+          <strong>5.0</strong>
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <span>URDigital Tech on Google</span>
+          </div>
+        </div>
+        <a class="btn btn-ghost" href="https://www.google.com/search?q=URDigital+Tech+Reviews" target="_blank" rel="noopener">View all Google reviews ↗</a>
+      </div>
+    </div>
+    <div class="review-viewport">
+      <div class="review-track">
+        <?php foreach($reviews as $r): $initials=implode('',array_map(fn($x)=>strtoupper($x[0]),array_slice(explode(' ',$r['name']),0,2))); ?>
+        <article class="google-review">
+          <header>
+            <span class="review-avatar"><?= htmlspecialchars($initials) ?></span>
+            <div>
+              <strong><?= htmlspecialchars($r['name']) ?></strong>
+              <small><?= htmlspecialchars($r['date']) ?></small>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </header>
+          <p><?= htmlspecialchars($r['text']) ?></p>
+          <span class="google-mark">G</span>
+        </article>
+        <?php endforeach; ?>
+      </div>
+    </div>
+    <div class="container">
+      <div class="carousel-controls">
+        <button class="carousel-prev" aria-label="Previous reviews">←</button>
+        <div class="carousel-dots" aria-label="Review pages"></div>
+        <button class="carousel-next" aria-label="Next reviews">→</button>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section-alt"><div class="container narrow"><div class="section-head reveal"><div class="eyebrow">FAQs</div><h2>Questions before we get started?</h2></div><div class="accordion"><details class="reveal"><summary>Can you combine multiple services into one project?</summary><p>Yes. We frequently combine website, brand, content, marketing, analytics, and operational support into one coordinated scope.</p></details><details class="reveal"><summary>Will my website be optimized for search and mobile?</summary><p>Every website includes responsive design, semantic structure, metadata, performance considerations, and technical SEO foundations.</p></details><details class="reveal"><summary>How do you handle feedback and revisions?</summary><p>We use defined review points and consolidated feedback so revisions stay organized and timelines remain predictable.</p></details></div><div class="more-space"><a class="text-link" href="faq.php">Read all FAQs →</a></div></div></section>
 
@@ -117,7 +175,18 @@
 <div id="portfolio-modal" class="query-popup portfolio-modal" role="dialog" aria-hidden="true" aria-label="Project showcase detail">
   <div class="query-popup-card portfolio-modal-card">
     <div class="portfolio-modal-media">
-      <img id="modal-img" src="" alt="Project Preview">
+      <div class="mac-bar">
+        <div class="mac-dots">
+          <span class="mac-dot mac-red"></span>
+          <span class="mac-dot mac-yellow"></span>
+          <span class="mac-dot mac-green"></span>
+        </div>
+        <div class="mac-url-bar" id="modal-url">urdigitaltech.com/preview</div>
+      </div>
+      <div class="portfolio-modal-media-inner">
+        <img id="modal-img" src="" alt="Project Preview">
+        <div class="portfolio-modal-hint">Hover to scroll full page ↕</div>
+      </div>
     </div>
     <div class="query-popup-content portfolio-modal-content">
       <button class="query-popup-close modal-close" aria-label="Close modal">×</button>
@@ -140,22 +209,64 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalCat = document.getElementById('modal-cat');
   const modalTitle = document.getElementById('modal-title');
   const modalDesc = document.getElementById('modal-desc');
+  const modalUrl = document.getElementById('modal-url');
   const closeBtn = modal.querySelector('.modal-close');
+
+  const setupHoverScroll = () => {
+    modalImg.style.transform = 'translateY(0)';
+    modalImg.style.transition = 'transform 0.3s ease';
+
+    const inner = modalImg.closest('.portfolio-modal-media-inner') || modalImg.parentElement;
+    if (!inner) return;
+
+    const calcAndAttach = () => {
+      const containerH = inner.clientHeight;
+      const renderedH = modalImg.naturalHeight
+        ? (modalImg.naturalHeight * (modalImg.clientWidth / modalImg.naturalWidth))
+        : modalImg.clientHeight;
+      const scrollDist = Math.max(0, renderedH - containerH);
+      const duration = Math.min(8, Math.max(3.5, scrollDist / 250));
+
+      inner.onmouseenter = () => {
+        if (scrollDist > 10) {
+          modalImg.style.transition = `transform ${duration}s cubic-bezier(0.25, 1, 0.5, 1)`;
+          modalImg.style.transform = `translateY(-${scrollDist}px)`;
+        }
+      };
+
+      inner.onmouseleave = () => {
+        modalImg.style.transition = `transform 0.7s cubic-bezier(0.25, 1, 0.5, 1)`;
+        modalImg.style.transform = 'translateY(0)';
+      };
+    };
+
+    if (modalImg.complete) {
+      calcAndAttach();
+    } else {
+      modalImg.onload = calcAndAttach;
+    }
+  };
 
   const openModal = (trigger) => {
     modalImg.src = trigger.dataset.img;
     modalCat.textContent = trigger.dataset.cat || 'SHOWCASE';
     modalTitle.textContent = trigger.dataset.title || 'Project Preview';
     modalDesc.textContent = trigger.dataset.desc || '';
+    if (modalUrl) {
+      const cleanSlug = (trigger.dataset.title || 'preview').toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      modalUrl.textContent = `urdigitaltech.com/${cleanSlug}`;
+    }
     modal.classList.add('open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    setupHoverScroll();
   };
 
   const closeModal = () => {
     modal.classList.remove('open');
     modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+    modalImg.style.transform = 'translateY(0)';
   };
 
   document.querySelectorAll('.portfolio-lightbox-trigger').forEach(trigger => {

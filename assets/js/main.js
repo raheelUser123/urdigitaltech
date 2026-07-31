@@ -1,7 +1,9 @@
 (()=>{
   const body=document.body,theme=document.getElementById('theme-toggle'),saved=localStorage.getItem('urd-theme');
+  const updateLogos=()=>{const isLight=body.classList.contains('light');document.querySelectorAll('.brand-logo').forEach(img=>{img.src=isLight?'assets/images/darklogo.png':'assets/images/urdigilogo.png'})};
   if(saved==='light')body.classList.add('light');
-  theme?.addEventListener('click',()=>{body.classList.toggle('light');localStorage.setItem('urd-theme',body.classList.contains('light')?'light':'dark')});
+  updateLogos();
+  theme?.addEventListener('click',()=>{body.classList.toggle('light');localStorage.setItem('urd-theme',body.classList.contains('light')?'light':'dark');updateLogos()});
   const panel=document.getElementById('side-panel'),overlay=document.getElementById('menu-overlay'),trigger=document.getElementById('menu-trigger'),close=document.getElementById('menu-close');
   function setMenu(open){panel?.classList.toggle('open',open);overlay?.classList.toggle('open',open);panel?.setAttribute('aria-hidden',open?'false':'true');trigger?.setAttribute('aria-expanded',open?'true':'false');body.style.overflow=open?'hidden':''}
   trigger?.addEventListener('click',()=>setMenu(true));close?.addEventListener('click',()=>setMenu(false));overlay?.addEventListener('click',()=>setMenu(false));document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});panel?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));

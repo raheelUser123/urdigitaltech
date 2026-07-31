@@ -14,14 +14,33 @@ function service_url($slug){ return $slug . '.php'; }
 <meta property="og:type" content="website"><meta property="og:title" content="<?= htmlspecialchars($page_title) ?>"><meta property="og:description" content="<?= htmlspecialchars($page_description) ?>">
 <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
 <meta name="theme-color" content="#080b19">
-<link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" href="assets/images/favicon-square.png" sizes="any" type="image/png">
+<link rel="shortcut icon" href="assets/images/favicon-square.png" type="image/png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-square.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-square.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon-square.png">
+<link rel="apple-touch-icon-precomposed" href="assets/images/favicon-square.png">
+<meta name="msapplication-TileColor" content="#080b19">
+<meta name="msapplication-TileImage" content="assets/images/favicon-square.png">
 <link rel="manifest" href="assets/favicon/site.webmanifest">
+<?php if ($current_page === 'lead-capture-system.php'): ?>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WQGMH3BN');</script>
+<!-- End Google Tag Manager -->
+<?php endif; ?>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css"></head><body>
+<?php if ($current_page === 'lead-capture-system.php'): ?>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQGMH3BN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<?php endif; ?>
 <div class="site-noise" aria-hidden="true"></div>
 <nav class="nav"><div class="container nav-inner">
 <a href="index.php" class="brand" aria-label="URDigital Tech home"><img src="assets/images/urdigilogo.png" alt="URDigital Tech logo" class="brand-logo"></a>

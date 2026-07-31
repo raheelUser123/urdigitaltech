@@ -417,7 +417,18 @@ $slice = array_slice($filtered_items, ($page - 1) * $per, $per);
 <div id="portfolio-modal" class="query-popup portfolio-modal" role="dialog" aria-hidden="true" aria-label="Project showcase detail">
   <div class="query-popup-card portfolio-modal-card">
     <div class="portfolio-modal-media">
-      <img id="modal-img" src="" alt="Project Preview">
+      <div class="mac-bar">
+        <div class="mac-dots">
+          <span class="mac-dot mac-red"></span>
+          <span class="mac-dot mac-yellow"></span>
+          <span class="mac-dot mac-green"></span>
+        </div>
+        <div class="mac-url-bar" id="modal-url">urdigitaltech.com/preview</div>
+      </div>
+      <div class="portfolio-modal-media-inner">
+        <img id="modal-img" src="" alt="Project Preview">
+        <div class="portfolio-modal-hint">Hover to scroll full page ↕</div>
+      </div>
     </div>
     <div class="query-popup-content portfolio-modal-content">
       <button class="query-popup-close modal-close" aria-label="Close modal">×</button>
@@ -440,22 +451,64 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalCat = document.getElementById('modal-cat');
   const modalTitle = document.getElementById('modal-title');
   const modalDesc = document.getElementById('modal-desc');
+  const modalUrl = document.getElementById('modal-url');
   const closeBtn = modal.querySelector('.modal-close');
+
+  const setupHoverScroll = () => {
+    modalImg.style.transform = 'translateY(0)';
+    modalImg.style.transition = 'transform 0.3s ease';
+
+    const inner = modalImg.closest('.portfolio-modal-media-inner') || modalImg.parentElement;
+    if (!inner) return;
+
+    const calcAndAttach = () => {
+      const containerH = inner.clientHeight;
+      const renderedH = modalImg.naturalHeight
+        ? (modalImg.naturalHeight * (modalImg.clientWidth / modalImg.naturalWidth))
+        : modalImg.clientHeight;
+      const scrollDist = Math.max(0, renderedH - containerH);
+      const duration = Math.min(8, Math.max(3.5, scrollDist / 250));
+
+      inner.onmouseenter = () => {
+        if (scrollDist > 10) {
+          modalImg.style.transition = `transform ${duration}s cubic-bezier(0.25, 1, 0.5, 1)`;
+          modalImg.style.transform = `translateY(-${scrollDist}px)`;
+        }
+      };
+
+      inner.onmouseleave = () => {
+        modalImg.style.transition = `transform 0.7s cubic-bezier(0.25, 1, 0.5, 1)`;
+        modalImg.style.transform = 'translateY(0)';
+      };
+    };
+
+    if (modalImg.complete) {
+      calcAndAttach();
+    } else {
+      modalImg.onload = calcAndAttach;
+    }
+  };
 
   const openModal = (card) => {
     modalImg.src = card.dataset.img;
     modalCat.textContent = card.dataset.cat;
     modalTitle.textContent = card.dataset.title;
     modalDesc.textContent = card.dataset.desc;
+    if (modalUrl) {
+      const cleanSlug = (card.dataset.title || 'preview').toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      modalUrl.textContent = `urdigitaltech.com/${cleanSlug}`;
+    }
     modal.classList.add('open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    setupHoverScroll();
   };
 
   const closeModal = () => {
     modal.classList.remove('open');
     modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+    modalImg.style.transform = 'translateY(0)';
   };
 
   document.querySelectorAll('.portfolio-card').forEach(card => {
