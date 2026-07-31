@@ -12,7 +12,7 @@ include 'includes/header.php';
     <p class="center" style="font-size:17px;">Chloe AI Receptionist is a 24/7 front desk system for home service
     businesses. Built for MHR first, now ready for your business.</p>
 
-    <div class="grid grid-3" style="margin:32px 0;">
+    <div class="grid grid-3 leddd" style="margin:32px 0;">
       <div class="card center"><h3 style="font-size:16px;">Answers every call, even after hours</h3></div>
       <div class="card center"><h3 style="font-size:16px;">Captures clean job details every time</h3></div>
       <div class="card center"><h3 style="font-size:16px;">Routes calls to the right person</h3></div>
@@ -26,24 +26,155 @@ include 'includes/header.php';
   </div>
 </header>
 
-<!-- DEMO VIDEO -->
-<section id="demo-video" style="background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
-  <div class="container center" style="max-width:760px;">
-    <h2>See Chloe in action <span class="text-dim" style="font-size:0.6em;">(1 minute)</span></h2>
-    <p class="center">This is the real flow: first ring &rarr; intake &rarr; routing &rarr; transcript summary.</p>
-    <div class="card" style="aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; background:var(--surface-2);">
-      <p class="mb-0 text-dim">[ Embed demo video here ]</p>
+<!-- DEMO VIDEO MAIN PLAYER -->
+<section id="demo-video" style="background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:70px 0;">
+  <div class="container center" style="max-width:860px;">
+    <div class="eyebrow center" style="justify-content:center;"><span class="dot"></span>Full System Playbook</div>
+    <h2 style="font-size:clamp(2.2rem, 4vw, 3.8rem); font-weight:800; margin-bottom:12px;">See <span style="color:var(--cyan);">Chloe AI</span> in Action <span class="text-dim" style="font-size:0.55em;">(60 Seconds)</span></h2>
+    <p class="center" style="max-width:720px; font-size:1.05rem; margin-bottom:28px;">This is the real flow: first ring &rarr; instant intake &rarr; smart routing &rarr; CRM transcript summary.</p>
+    <div class="card" style="padding:10px; background:#050814; border:1px solid rgba(52,230,211,0.3); border-radius:24px; box-shadow:0 30px 80px rgba(0,0,0,0.5);">
+      <video controls playsinline preload="metadata" style="width:100%; border-radius:18px; display:block; aspect-ratio:16/9; object-fit:cover;" src="assets/video/chloevideo/Chloe (Reliable Front Desk) (2).mp4"></video>
     </div>
   </div>
 </section>
 
-<!-- SPEAK WITH CHLOE -->
-<section class="center">
-  <div class="container center">
-    <h2>Speak with <span style="color:var(--accent)">Chloe</span>, try it now!</h2>
-    <a href="tel:7163400767" class="btn btn-primary">Dial 716-340-0767</a>
+<!-- SPEAK WITH CHLOE CTA SECTION (PROMINENT & KEYFRAME ANIMATED) -->
+<section class="speak-chloe-section">
+  <div class="container">
+    <div class="speak-chloe-card reveal">
+      <div class="live-status-badge"><i></i> Chloe is Live & Answering Calls Now (24/7)</div>
+      <h2>Speak with <span style="color:var(--cyan);">Chloe AI</span>, try it now!</h2>
+      <p class="center" style="max-width:680px; margin:0 auto; font-size:1.1rem; color:#cbd5e1;">Test the 2-second response flow live on your own phone right now. No waiting, no forms required.</p>
+      
+      <div>
+        <a href="tel:7163400767" class="speak-chloe-btn">
+          <span>📞</span>
+          <span>Dial (716) 340-0767</span>
+        </a>
+      </div>
+
+      <div class="speak-chloe-features">
+        <span>⚡ Answers in &lt; 2 Seconds</span>
+        <span>🔒 100% Automated Intake</span>
+        <span>📅 Real-Time Dispatch Routing</span>
+      </div>
+    </div>
   </div>
 </section>
+
+<!-- DEMO VIDEO REELS SHOWCASE (PLACED DIRECTLY BELOW SPEAK WITH CHLOE) -->
+<section class="video-reels-section">
+  <div class="container center">
+    <div class="eyebrow center" style="justify-content:center;"><span class="dot"></span>Watch Real Operator Playbooks & Testimonials</div>
+    <h2 style="font-size:clamp(2.2rem, 4vw, 3.8rem); font-weight:800; margin-bottom:12px;">Operator Testimonials & <span style="color:var(--cyan);">Chloe Reels</span></h2>
+    <p class="center" style="max-width:720px; font-size:1.05rem;">Hover over any reel to play instantly with sound 🔊 (or tap to unmute & play).</p>
+
+    <div class="video-reels-grid">
+      <!-- Reel 1: David Royce -->
+      <div class="reel-card reveal">
+        <span class="reel-badge">▶ Operator Reel</span>
+        <span class="reel-sound-icon" title="Hover for Audio">...</span>
+        <video class="reel-video" src="assets/video/EXCITED Hey my name s David Royce confidently I m.mp4" playsinline loop preload="metadata" muted></video>
+        <div class="reel-overlay-info">
+          <h4>David Royce</h4>
+          <p>Business Owner</p>
+        </div>
+      </div>
+
+      <!-- Reel 2: Trevor / Mann Roofing -->
+      <div class="reel-card reveal">
+        <span class="reel-badge">▶ Roofing Client</span>
+        <span class="reel-sound-icon" title="Hover for Audio">...</span>
+        <video class="reel-video" src="assets/video/lighthearted Hey quick one I m Trevor with Mann Roofing (1).mp4" playsinline loop preload="metadata" muted></video>
+        <div class="reel-overlay-info">
+          <h4>Trevor — Mann Roofing</h4>
+          <p>Roofing Contractor</p>
+        </div>
+      </div>
+
+      <!-- Reel 3: CHLOE VIDEO (FEATURED CENTER POSITION) -->
+      <div class="reel-card featured-chloe reveal">
+        <span class="reel-badge badge-chloe">⭐ Featured Chloe Demo</span>
+        <span class="reel-sound-icon" title="Hover for Audio">🔊</span>
+        <video class="reel-video" src="assets/video/chloevideo/Chloe (Reliable Front Desk) (2).mp4" playsinline loop preload="metadata" muted></video>
+        <div class="reel-overlay-info">
+          <h4>Chloe AI Front Desk</h4>
+          <p>24/7 Answering Engine</p>
+        </div>
+      </div>
+
+      <!-- Reel 4: Client Reel 4 -->
+      <div class="reel-card reveal">
+        <span class="reel-badge">▶ Client Case Study</span>
+        <span class="reel-sound-icon" title="Hover for Audio">...</span>
+        <video class="reel-video" src="assets/video/video5177314626987100030.mp4" playsinline loop preload="metadata" muted></video>
+        <div class="reel-overlay-info">
+          <h4>Home Service Operator</h4>
+          <p>Call Answering Result</p>
+        </div>
+      </div>
+
+      <!-- Reel 5: Client Reel 5 -->
+      <div class="reel-card reveal">
+        <span class="reel-badge">▶ Dispatch Success</span>
+        <span class="reel-sound-icon" title="Hover for Audio">...</span>
+        <video class="reel-video" src="assets/video/video5179647644632356036.mp4" playsinline loop preload="metadata" muted></video>
+        <div class="reel-overlay-info">
+          <h4>Dispatch Success</h4>
+          <p>24/7 Answering</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const reelCards = document.querySelectorAll('.reel-card');
+
+  reelCards.forEach(card => {
+    const video = card.querySelector('video');
+    const soundIcon = card.querySelector('.reel-sound-icon');
+    if (!video) return;
+
+    // Hover to play WITH AUDIO
+    card.addEventListener('mouseenter', () => {
+      video.muted = false;
+      video.volume = 1.0;
+      const promise = video.play();
+      if (promise !== undefined) {
+        promise.then(() => {
+          if (soundIcon) soundIcon.textContent = '🔊';
+        }).catch(() => {
+          video.muted = true;
+          video.play();
+          if (soundIcon) soundIcon.textContent = '🔇';
+        });
+      }
+    });
+
+    // Mouse leave to pause
+    card.addEventListener('mouseleave', () => {
+      video.pause();
+      video.muted = true;
+      if (soundIcon) soundIcon.textContent = '🔈';
+    });
+
+    // Click to toggle play/pause with sound
+    card.addEventListener('click', () => {
+      if (video.paused) {
+        video.muted = false;
+        video.volume = 1.0;
+        video.play();
+        if (soundIcon) soundIcon.textContent = '🔊';
+      } else {
+        video.pause();
+        if (soundIcon) soundIcon.textContent = '⏸';
+      }
+    });
+  });
+});
+</script>
 
 <!-- COST OF SILENCE -->
 <section style="background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">

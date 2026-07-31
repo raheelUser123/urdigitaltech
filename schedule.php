@@ -19,7 +19,7 @@ include 'includes/header.php';
       <input type="hidden" name="form_type" value="strategy_call">
       <input class="hp" name="website" tabindex="-1" autocomplete="off">
       <aside class="booking-sidebar">
-        <div class="booking-brand"><span class="brand-mark">UD</span><strong>URDigital Tech</strong></div>
+        <div class="booking-brand"><img src="assets/images/urdigilogo.png" alt="URDigital Tech logo" class="brand-logo"></div>
         <div class="booking-duration">30-minute strategy call</div>
         <p>A focused conversation to understand the opportunity, recommend the right approach and define clear next steps.</p>
         <ul class="booking-benefits">

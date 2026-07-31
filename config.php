@@ -31,7 +31,7 @@ if (!defined('MAIL_TO_ADDRESS')) define('MAIL_TO_ADDRESS', env_value('MAIL_TO_AD
 if (!defined('MAIL_TO_NAME')) define('MAIL_TO_NAME', env_value('MAIL_TO_NAME', 'URDigital Tech Team'));
 
 // ClickUp integration
-if (!defined('CLICKUP_API_TOKEN')) define('CLICKUP_API_TOKEN', env_value('CLICKUP_API_TOKEN', 'REPLACE_WITH_REGENERATED_CLICKUP_TOKEN'));
+if (!defined('CLICKUP_API_TOKEN')) define('CLICKUP_API_TOKEN', env_value('CLICKUP_API_TOKEN', 'pk_87315537_MNO8YYSZ6PP6IGMB9TZ8D6WLC9KYQEH7'));
 if (!defined('CLICKUP_LIST_ID')) define('CLICKUP_LIST_ID', env_value('CLICKUP_LIST_ID', '901108518949'));
 if (!defined('CLICKUP_DEFAULT_ASSIGNEE_ID')) define('CLICKUP_DEFAULT_ASSIGNEE_ID', env_value('CLICKUP_DEFAULT_ASSIGNEE_ID', ''));
 if (!defined('CLICKUP_DEFAULT_TAG')) define('CLICKUP_DEFAULT_TAG', env_value('CLICKUP_DEFAULT_TAG', 'website-lead'));
