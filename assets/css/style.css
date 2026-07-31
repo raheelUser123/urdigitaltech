@@ -17,6 +17,9 @@ body.light{--bg:#f7f9ff;--surface:#fff;--text:#11162a;--muted:#5f6b84;--line:#dc
 body.light h2#modal-title {
     color: #fff;
 }
+body.light .price-card.reveal.visible a {
+    color: #000;
+}
 body.light a.btn.btn-ghost {
     color: #fff;
 }body.light .form-card label, .form-field {
