@@ -271,26 +271,49 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </section>
 
-<!-- LIVE CALL TICKER -->
-<section>
+<!-- LIVE CALL TICKER / DASHBOARD -->
+<section style="background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
   <div class="container">
-    <h2 class="center">See it working, right now</h2>
-    <div class="ticker" style="max-width:760px; margin:0 auto;">
+    <div class="section-head center reveal" style="max-width:760px; margin:0 auto 24px;">
+      <div class="eyebrow center" style="justify-content:center;"><span class="dot"></span>Real-Time Activity Feed</div>
+      <h2 style="font-size:clamp(2.2rem, 4vw, 3.6rem); font-weight:800;">See <span style="color:var(--cyan);">Chloe AI</span> working, right now</h2>
+      <p class="center" style="font-size:1.05rem;">Live stream of actual call intake, instant lead qualification, and crew routing.</p>
+    </div>
+
+    <div class="ticker reveal">
       <div class="ticker-head">
-        <span>Live call log</span>
-        <span class="live"><span class="live-pulse"></span>Answering now</span>
+        <span>⚡ Live Dispatch Log</span>
+        <span class="live"><span class="live-pulse"></span>Answering Live 24/7</span>
       </div>
       <div class="ticker-row">
-        <span class="t">2:41 PM</span><span class="caller">M. Alvarez</span><span class="job">Water heater leak</span>
-        <span class="status routed">Routed to crew</span>
+        <span class="t">2:45 PM</span>
+        <span class="caller">S. Jenkins</span>
+        <span class="job">Emergency Pipe Burst &amp; Water Leak</span>
+        <span class="status routed">✓ Routed to On-Call Tech</span>
       </div>
       <div class="ticker-row">
-        <span class="t">2:38 PM</span><span class="caller">D. Chen</span><span class="job">AC not cooling</span>
-        <span class="status booked">Booked · Thu 9AM</span>
+        <span class="t">2:41 PM</span>
+        <span class="caller">M. Alvarez</span>
+        <span class="job">Water Heater Replacement Request</span>
+        <span class="status routed">✓ Routed to Crew</span>
       </div>
       <div class="ticker-row">
-        <span class="t">11:52 PM</span><span class="caller">R. Foster</span><span class="job">Breaker tripping</span>
-        <span class="status routed">Routed · after hours</span>
+        <span class="t">2:38 PM</span>
+        <span class="caller">D. Chen</span>
+        <span class="job">AC Unit Not Cooling (Diagnostic)</span>
+        <span class="status booked">📅 Booked · Thu 9:00 AM</span>
+      </div>
+      <div class="ticker-row">
+        <span class="t">1:15 PM</span>
+        <span class="caller">K. Patel</span>
+        <span class="job">Main Line Sewer Backup</span>
+        <span class="status routed">✓ Dispatched to Crew</span>
+      </div>
+      <div class="ticker-row">
+        <span class="t">11:52 PM</span>
+        <span class="caller">R. Foster</span>
+        <span class="job">Electrical Breaker Tripping</span>
+        <span class="status routed">🌙 Routed · After Hours</span>
       </div>
     </div>
   </div>
@@ -448,49 +471,133 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <!-- STRATEGY CALL FORM (scheduling) -->
 <section id="strategy-call">
-  <div class="container grid grid-2" style="align-items:start;">
-    <div>
-      <div class="eyebrow"><span class="dot"></span>Free strategy call</div>
-      <h2>See if Chloe fits your operation</h2>
-      <p>We'll walk through real call scenarios exactly like the ones your business handles today —
-      no pressure, no scripts. Pick a time that works and we'll take it from there.</p>
-      <p class="text-dim">Prefer to talk now? <a href="tel:7163400767" style="color:var(--accent);">Dial 716-340-0767</a></p>
+  <div class="container">
+    <div class="section-head center reveal" style="max-width:760px; margin:0 auto 20px;">
+      <div class="eyebrow center" style="justify-content:center;"><span class="dot"></span>Free Strategy Session</div>
+      <h2 style="font-size:clamp(2.2rem, 4vw, 3.6rem); font-weight:800;">See if <span style="color:var(--cyan);">Chloe AI</span> fits your operation</h2>
+      <p class="center" style="font-size:1.05rem;">We'll walk through real call scenarios exactly like the ones your business handles today — no pressure, no scripts.</p>
     </div>
 
-    <form id="lead-form" class="card" action="/contact-handler.php" method="post">
-      <div id="form-status"></div>
-      <div class="form-field">
-        <label for="name">Full name</label>
-        <input type="text" id="name" name="name" required>
+    <div class="lead-booking-shell reveal">
+      <!-- Left Column: AI Agent Visual & Info -->
+      <aside class="lead-agent-card">
+        <div>
+          <div class="lead-agent-image-wrap">
+            <img src="assets/images/chloe-agent.jpg" alt="Chloe AI Receptionist Agent">
+            <div class="lead-agent-live-badge"><i></i> Chloe AI Online (24/7)</div>
+          </div>
+          <div class="lead-agent-info">
+            <h3>Chloe AI Receptionist</h3>
+            <p>Smart front desk automation built for instant call intake and real-time dispatch.</p>
+          </div>
+          <div class="lead-agent-features">
+            <div class="lead-agent-feature"><span>⚡</span> Answers in &lt; 2 seconds</div>
+            <div class="lead-agent-feature"><span>🔒</span> 100% automated qualifying</div>
+            <div class="lead-agent-feature"><span>📅</span> Direct dispatch routing</div>
+          </div>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,0.1); padding-top:16px;">
+          <small style="color:var(--muted); display:block; margin-bottom:6px;">Prefer to talk right now?</small>
+          <a href="tel:7163400767" class="btn btn-ghost btn-block" style="border-color:rgba(52,230,211,0.4); color:var(--cyan);">
+            📞 Dial (716) 340-0767
+          </a>
+        </div>
+      </aside>
+
+      <!-- Right Column: Multi-Step Interactive Form -->
+      <div class="lead-form-main">
+        <form id="lead-form" class="form-card multi-step" action="/contact-handler.php" method="post">
+          <input type="hidden" name="form_type" value="strategy_call">
+          <input class="hp" name="website" tabindex="-1" autocomplete="off">
+          
+          <div class="form-progress">
+            <span class="active">1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+
+          <div id="form-status"></div>
+
+          <!-- STEP 1: Business Details -->
+          <div class="form-step active">
+            <div class="eyebrow">Step 1 of 3 · Business Overview</div>
+            <h3 class="lead-step-title">Tell us about your business</h3>
+            <p class="lead-step-subtitle">Help us tailor the live demo to your call workflow.</p>
+            
+            <div class="form-field">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            
+            <div class="form-field">
+              <label for="business">Business / Organization Name</label>
+              <input type="text" id="business" name="business" placeholder="e.g. Apex Roofing Services">
+            </div>
+
+            <div class="form-field">
+              <label for="message">What's your biggest call challenge today?</label>
+              <textarea id="message" name="message" placeholder="e.g. Missing after-hours calls, slow quote dispatching..."></textarea>
+            </div>
+
+            <div class="form-actions end">
+              <button type="button" class="btn btn-primary next-step">Next: Pick Date & Time →</button>
+            </div>
+          </div>
+
+          <!-- STEP 2: Preferred Schedule -->
+          <div class="form-step">
+            <div class="eyebrow">Step 2 of 3 · Schedule Demo</div>
+            <h3 class="lead-step-title">Choose a preferred date & time</h3>
+            <p class="lead-step-subtitle">Select a slot that works best for your team.</p>
+
+            <div class="form-field">
+              <label for="preferred_date">Preferred Date *</label>
+              <input type="date" id="preferred_date" name="preferred_date" min="<?= date('Y-m-d') ?>" required>
+            </div>
+
+            <div class="form-field">
+              <label>Preferred Time Slot *</label>
+              <div class="time-grid" style="margin-top:6px;">
+                <?php foreach (['9:00 AM', '11:00 AM', '1:00 PM', '3:00 PM', '5:00 PM'] as $t): ?>
+                  <label class="time-slot">
+                    <input type="radio" name="preferred_time" value="<?= $t ?>" required>
+                    <span><?= $t ?></span>
+                  </label>
+                <?php endforeach; ?>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="btn btn-ghost prev-step">← Back</button>
+              <button type="button" class="btn btn-primary next-step">Next: Contact Info →</button>
+            </div>
+          </div>
+
+          <!-- STEP 3: Contact Details & Submit -->
+          <div class="form-step">
+            <div class="eyebrow">Step 3 of 3 · Final Step</div>
+            <h3 class="lead-step-title">Where should we send confirmation?</h3>
+            <p class="lead-step-subtitle">We will confirm your calendar invitation via email.</p>
+
+            <div class="form-field">
+              <label for="email">Work Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Direct Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="btn btn-ghost prev-step">← Back</button>
+              <button type="submit" class="btn btn-primary">Book Your Free Strategy Call →</button>
+            </div>
+            <p class="form-note" style="margin-top:14px; text-align:center;">We'll confirm your slot by email within one business day.</p>
+          </div>
+        </form>
       </div>
-      <div class="form-field">
-        <label for="business">Business name</label>
-        <input type="text" id="business" name="business">
-      </div>
-      <div class="form-field">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-field">
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" name="phone" required>
-      </div>
-      <div class="form-field">
-        <label for="preferred_date">Preferred date</label>
-        <input type="date" id="preferred_date" name="preferred_date">
-      </div>
-      <div class="form-field">
-        <label for="preferred_time">Preferred time</label>
-        <input type="time" id="preferred_time" name="preferred_time">
-      </div>
-      <div class="form-field">
-        <label for="message">What's going on with your calls today?</label>
-        <textarea id="message" name="message"></textarea>
-      </div>
-      <input type="hidden" name="form_type" value="strategy_call">
-      <button type="submit" class="btn btn-primary btn-block">Book your free strategy call</button>
-      <p class="form-note" style="margin-top:12px;">We'll confirm your slot by email within one business day.</p>
-    </form>
+    </div>
   </div>
 </section>
 
