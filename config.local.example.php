@@ -1,24 +1,41 @@
 <?php
 /**
- * Rename this file to config.local.php and add real credentials.
- * Never upload config.local.php to GitHub or share it publicly.
+ * URDigital Tech server configuration.
+ *
+ * Keep real passwords/tokens in config.local.php (not in Git/public downloads).
+ * Copy config.local.example.php to config.local.php and enter the live values.
  */
 
-define('SMTP_HOST', 'mail.yourdomain.com');
-define('SMTP_PORT', 465);
-define('SMTP_ENCRYPTION', 'ssl');
-define('SMTP_USERNAME', 'forms@yourdomain.com');
-define('SMTP_PASSWORD', 'YOUR_EMAIL_APP_PASSWORD');
+$localConfig = __DIR__ . '/config.local.php';
+if (is_file($localConfig)) {
+    require $localConfig;
+}
 
-define('MAIL_FROM_ADDRESS', 'forms@yourdomain.com');
-define('MAIL_FROM_NAME', 'URDigital Tech Website');
-define('MAIL_TO_ADDRESS', 'solutions@urdigitaltech.com');
-define('MAIL_TO_NAME', 'URDigital Tech Team');
+function env_value(string $key, string $default = ''): string
+{
+    $value = getenv($key);
+    return ($value !== false && $value !== '') ? $value : $default;
+}
 
-// Regenerate the token that was shared in chat, then paste the NEW token here.
-define('CLICKUP_API_TOKEN', 'pk_REPLACE_WITH_NEW_TOKEN');
-define('CLICKUP_LIST_ID', '901108518949');
+// Business SMTP
+if (!defined('SMTP_HOST')) define('SMTP_HOST', env_value('SMTP_HOST', 'smtp.gmail.com'));
+if (!defined('SMTP_PORT')) define('SMTP_PORT', (int) env_value('SMTP_PORT', '587'));
+if (!defined('SMTP_ENCRYPTION')) define('SMTP_ENCRYPTION', env_value('SMTP_ENCRYPTION', 'tls'));
+if (!defined('SMTP_USERNAME')) define('SMTP_USERNAME', env_value('SMTP_USERNAME', 'solutions@urdigitaltech.com'));
+if (!defined('SMTP_PASSWORD')) define('SMTP_PASSWORD', env_value('SMTP_PASSWORD', 'xyya rhvb ctkm uwip'));
 
-// Optional ClickUp user ID. Leave blank to create unassigned tasks.
-define('CLICKUP_DEFAULT_ASSIGNEE_ID', '');
-define('CLICKUP_DEFAULT_TAG', 'website-lead');
+// Email identities
+if (!defined('MAIL_FROM_ADDRESS')) define('MAIL_FROM_ADDRESS', env_value('MAIL_FROM_ADDRESS', 'solutions@urdigitaltech.com'));
+if (!defined('MAIL_FROM_NAME')) define('MAIL_FROM_NAME', env_value('MAIL_FROM_NAME', 'URDigital Tech Website'));
+if (!defined('MAIL_TO_ADDRESS')) define('MAIL_TO_ADDRESS', env_value('MAIL_TO_ADDRESS', 'solutions@urdigitaltech.com'));
+if (!defined('MAIL_TO_NAME')) define('MAIL_TO_NAME', env_value('MAIL_TO_NAME', 'URDigital Tech Team'));
+
+// ClickUp integration
+if (!defined('CLICKUP_API_TOKEN')) define('CLICKUP_API_TOKEN', env_value('CLICKUP_API_TOKEN', 'pk_87315537_KLOCR5UYJQE40QBQCZZ06WXGOR2GGVUS'));
+if (!defined('CLICKUP_LIST_ID')) define('CLICKUP_LIST_ID', env_value('CLICKUP_LIST_ID', '901108518949'));
+if (!defined('CLICKUP_DEFAULT_ASSIGNEE_ID')) define('CLICKUP_DEFAULT_ASSIGNEE_ID', env_value('CLICKUP_DEFAULT_ASSIGNEE_ID', ''));
+if (!defined('CLICKUP_DEFAULT_TAG')) define('CLICKUP_DEFAULT_TAG', env_value('CLICKUP_DEFAULT_TAG', 'website-lead'));
+
+// Site basics
+if (!defined('SITE_URL')) define('SITE_URL', env_value('SITE_URL', 'https://urdigitaltech.com'));
+if (!defined('FORM_RATE_LIMIT_SECONDS')) define('FORM_RATE_LIMIT_SECONDS', 20);
