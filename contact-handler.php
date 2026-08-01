@@ -21,7 +21,7 @@ header('Content-Type: application/json; charset=utf-8');
 header('X-Content-Type-Options: nosniff');
 
 require_once __DIR__ . '/config.php';
-require_once __DIR__ . '/email-template.php';
+require_once __DIR__ . '/includes/email-template.php';
 
 /**
  * Return JSON response and stop execution.
