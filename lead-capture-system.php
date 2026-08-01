@@ -508,7 +508,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="lead-form-main">
         <form id="lead-form" class="form-card multi-step" action="/contact-handler.php" method="post">
           <input type="hidden" name="form_type" value="strategy_call">
-          <input class="hp" name="website" tabindex="-1" autocomplete="off">
+          <div class="hp" aria-hidden="true"><label>Leave this field empty<input type="text" name="urd_company_fax" value="" tabindex="-1" autocomplete="new-password"></label></div>
           
           <div class="form-progress">
             <span class="active">1</span>

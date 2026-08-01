@@ -22,7 +22,7 @@ if (!defined('SMTP_HOST')) define('SMTP_HOST', env_value('SMTP_HOST', 'smtp.gmai
 if (!defined('SMTP_PORT')) define('SMTP_PORT', (int) env_value('SMTP_PORT', '587'));
 if (!defined('SMTP_ENCRYPTION')) define('SMTP_ENCRYPTION', env_value('SMTP_ENCRYPTION', 'tls'));
 if (!defined('SMTP_USERNAME')) define('SMTP_USERNAME', env_value('SMTP_USERNAME', 'solutions@urdigitaltech.com'));
-if (!defined('SMTP_PASSWORD')) define('SMTP_PASSWORD', env_value('SMTP_PASSWORD', 'xyya rhvb ctkm uwip'));
+if (!defined('SMTP_PASSWORD')) define('SMTP_PASSWORD', env_value('SMTP_PASSWORD', 'xyyarhvbctkmuwip'));
 
 // Email identities
 if (!defined('MAIL_FROM_ADDRESS')) define('MAIL_FROM_ADDRESS', env_value('MAIL_FROM_ADDRESS', 'solutions@urdigitaltech.com'));
