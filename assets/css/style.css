@@ -542,7 +542,7 @@ body.light .showcase-btn:hover{background:linear-gradient(135deg,var(--cyan),var
 @media(max-width:1024px){.showcase-grid-4{grid-template-columns:repeat(2,1fr);gap:18px}.web-showcase-card img{height:380px}.branding-showcase-card img{height:280px}.logo-showcase-card img{height:260px}}
 @media(max-width:650px){
   .query-popup-card.portfolio-modal-card {
-    width: auto !important;
+    width: 100% !important;
     display: block;
     max-height: none !important;
 }
