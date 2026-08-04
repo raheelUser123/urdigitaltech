@@ -4,329 +4,138 @@ $page_description = 'Explore 40+ selected URDigital Tech websites, brand systems
 include 'includes/header.php';
 
 $all_portfolio_items = [
-    // Web & E-Commerce
     [
-        'title' => 'Enterprise E-Commerce Portal',
-        'cat' => 'E-Commerce',
+        'title' => 'Website Mockup 01',
+        'cat' => 'Website',
         'code' => 'web',
-        'image' => 'assets/images/portfolio/port1.jpg',
-        'desc' => 'High-converting online store with seamless user journey, custom product showcase, and multi-currency checkout.'
+        'image' => 'assets/images/portfolio/webui/web1.jpeg',
+        'desc' => 'Modern website showcase designed for a clean SaaS-style presentation and higher conversion flow.'
     ],
     [
-        'title' => 'Digital Experience & SaaS App',
-        'cat' => 'Web Design',
+        'title' => 'Website Mockup 02',
+        'cat' => 'Website',
         'code' => 'web',
-        'image' => 'assets/images/portfolio/port2.png',
-        'desc' => 'Modern Web application UI built for lightning speed, high customer engagement, and easy lead conversion.'
+        'image' => 'assets/images/portfolio/webui/web2.jpeg',
+        'desc' => 'Responsive digital layout with strong product positioning, clarity, and polished user journey cues.'
     ],
     [
-        'title' => 'Services & Booking Platform',
-        'cat' => 'Web Design',
+        'title' => 'Website Mockup 03',
+        'cat' => 'Website',
         'code' => 'web',
-        'image' => 'assets/images/portfolio/port5.png',
-        'desc' => 'Clean digital booking interface with automated intake forms and responsive multi-device layout.'
+        'image' => 'assets/images/portfolio/webui/web3.webp',
+        'desc' => 'Conversion-first web concept built to communicate service value with speed and confidence.'
     ],
     [
-        'title' => 'Financial Analytics & Tech Hub',
-        'cat' => 'Web Design',
+        'title' => 'Website Mockup 04',
+        'cat' => 'Website',
         'code' => 'web',
-        'image' => 'assets/images/portfolio/port6.png',
-        'desc' => 'Data-intensive web platform featuring structured information architecture and live dashboard components.'
+        'image' => 'assets/images/portfolio/webui/web4.webp',
+        'desc' => 'Premium product and portfolio presentation developed for a modern digital-first brand.'
     ],
     [
-        'title' => 'Corporate Agency Business Portal',
-        'cat' => 'Web Design',
+        'title' => 'Website Mockup 05',
+        'cat' => 'Website',
         'code' => 'web',
-        'image' => 'assets/images/portfolio/port10.png',
-        'desc' => 'Professional corporate website designed around trust, service clarity, and measurable lead generation.'
+        'image' => 'assets/images/portfolio/webui/web5.webp',
+        'desc' => 'High-impact homepage layout focused on trust, messaging clarity, and service positioning.'
     ],
     [
-        'title' => 'High-Impact Conversion Page',
-        'cat' => 'Web Design',
+        'title' => 'Website Mockup 06',
+        'cat' => 'Website',
         'code' => 'web',
-        'image' => 'assets/images/portfolio/port14.jpg',
-        'desc' => 'Focused landing page built to capture inbound interest and maximize visitor action.'
+        'image' => 'assets/images/portfolio/webui/web6.webp',
+        'desc' => 'Clean, structured website concept designed to highlight conversion paths and product credibility.'
     ],
     [
-        'title' => 'Modern Interactive Web UI',
-        'cat' => 'Web Design',
-        'code' => 'web',
-        'image' => 'assets/images/portfolio/1.jpg',
-        'desc' => 'Vibrant, responsive digital layout crafted for modern brand positioning and performance.'
-    ],
-    [
-        'title' => 'B2B Marketplace & Store',
-        'cat' => 'E-Commerce',
-        'code' => 'web',
-        'image' => 'assets/images/portfolio/2.jpg',
-        'desc' => 'Scalable online shopping experience featuring intuitive catalog search and customer portal.'
-    ],
-    [
-        'title' => 'Cloud Tech Solutions Portal',
-        'cat' => 'Web Design',
-        'code' => 'web',
-        'image' => 'assets/images/portfolio/3.jpg',
-        'desc' => 'Technology service website presenting complex offerings with visual clarity and speed.'
-    ],
-    [
-        'title' => 'Health & Wellness Web Application',
-        'cat' => 'Web Design',
-        'code' => 'web',
-        'image' => 'assets/images/portfolio/4.jpg',
-        'desc' => 'Accessible, user-centric web platform engineered for seamless client onboarding.'
-    ],
-    [
-        'title' => 'Creative Agency Digital Showcase',
-        'cat' => 'Web Design',
-        'code' => 'web',
-        'image' => 'assets/images/portfolio/5.jpg',
-        'desc' => 'Bold digital portfolio platform showcasing full-stack design and development expertise.'
-    ],
-    [
-        'title' => 'Mobile-Optimized Web App Interface',
-        'cat' => 'Web Design',
-        'code' => 'web',
-        'image' => 'assets/images/portfolio/9.webp',
-        'desc' => 'Mobile-first application interface designed for effortless navigation and fast interactions.'
-    ],
-
-    // Branding & Logo Systems
-    [
-        'title' => 'Apex Tech Brand Identity',
+        'title' => 'Branding Concept 01',
         'cat' => 'Branding',
         'code' => 'branding',
-        'image' => 'assets/images/portfolio/Logo1.webp',
-        'desc' => 'Geometric, forward-looking logo mark designed for modern software and technology companies.'
+        'image' => 'assets/images/portfolio/branding/1.jpg',
+        'desc' => 'Brand identity concept with a premium, strategic look tailored to modern business positioning.'
     ],
     [
-        'title' => 'Veritas Corporate Brand Mark',
+        'title' => 'Branding Concept 02',
         'cat' => 'Branding',
         'code' => 'branding',
-        'image' => 'assets/images/portfolio/logo2.webp',
-        'desc' => 'Versatile corporate identity system engineered for high legibility across print and digital media.'
+        'image' => 'assets/images/portfolio/branding/2.jpg',
+        'desc' => 'Visual identity direction built around clarity, trust, and memorable modern brand signals.'
     ],
     [
-        'title' => 'Pulse Digital Startup Symbol',
+        'title' => 'Branding Concept 03',
         'cat' => 'Branding',
         'code' => 'branding',
-        'image' => 'assets/images/portfolio/Logo3.webp',
-        'desc' => 'Energetic visual mark and identity suite crafted for a high-growth tech startup.'
+        'image' => 'assets/images/portfolio/branding/3.jpg',
+        'desc' => 'Creative branding exploration balancing polished presentation with clear market differentiation.'
     ],
     [
-        'title' => 'Nexus Ventures Brand System',
+        'title' => 'Branding Concept 04',
         'cat' => 'Branding',
         'code' => 'branding',
-        'image' => 'assets/images/portfolio/Logo4.webp',
-        'desc' => 'Clean typographic logo design paired with a comprehensive visual style architecture.'
+        'image' => 'assets/images/portfolio/branding/4.jpg',
+        'desc' => 'Modern brand direction using typography, composition, and strong visual rhythm for recognition.'
     ],
     [
-        'title' => 'Summit Financial Identity',
+        'title' => 'Branding Concept 05',
         'cat' => 'Branding',
         'code' => 'branding',
-        'image' => 'assets/images/portfolio/Logo5.webp',
-        'desc' => 'Strong, institutional emblem representing security, financial trust, and steady growth.'
+        'image' => 'assets/images/portfolio/branding/5.jpg',
+        'desc' => 'Fresh brand system designed to elevate perception and support a stronger digital presence.'
     ],
     [
-        'title' => 'Aura Studio Mark',
-        'cat' => 'Branding',
-        'code' => 'branding',
-        'image' => 'assets/images/portfolio/logo6.webp',
-        'desc' => 'Dynamic abstract logo mark blending modern color gradients with precise line work.'
-    ],
-
-    // Graphic Design & Marketing
-    [
-        'title' => 'Executive Keynote Deck Design',
-        'cat' => 'Marketing',
-        'code' => 'marketing',
-        'image' => 'assets/images/portfolio/bp1.webp',
-        'desc' => 'Polished investor and stakeholder presentation deck with custom data visualizations.'
+        'title' => 'Logo Design 01',
+        'cat' => 'Logo Design',
+        'code' => 'logo',
+        'image' => 'assets/images/portfolio/logo/Logo1.webp',
+        'desc' => 'Logo concept crafted to feel professional, scalable, and easy to apply across online platforms.'
     ],
     [
-        'title' => 'Multi-Channel Social Campaign',
-        'cat' => 'Marketing',
-        'code' => 'marketing',
-        'image' => 'assets/images/portfolio/bp2.webp',
-        'desc' => 'Coordinated social graphics set tailored for cross-platform engagement and brand reach.'
+        'title' => 'Logo Design 02',
+        'cat' => 'Logo Design',
+        'code' => 'logo',
+        'image' => 'assets/images/portfolio/logo/Logo3.webp',
+        'desc' => 'Distinct brand symbol developed for a clean, modern, and memorable digital-first identity.'
     ],
     [
-        'title' => 'Digital Product Rollout Kit',
-        'cat' => 'Marketing',
-        'code' => 'marketing',
-        'image' => 'assets/images/portfolio/bp3.webp',
-        'desc' => 'Complete marketing launch assets including social ads, email headers, and promo banners.'
+        'title' => 'Logo Design 03',
+        'cat' => 'Logo Design',
+        'code' => 'logo',
+        'image' => 'assets/images/portfolio/logo/Logo4.webp',
+        'desc' => 'Creative logo exploration with strong shape language for technology, service, and brand recognition.'
     ],
     [
-        'title' => 'Brand Asset & Guidelines Deck',
-        'cat' => 'Marketing',
-        'code' => 'marketing',
-        'image' => 'assets/images/portfolio/bp4.webp',
-        'desc' => 'Detailed visual standards guide establishing consistent typography, color palettes, and imagery.'
+        'title' => 'Logo Design 04',
+        'cat' => 'Logo Design',
+        'code' => 'logo',
+        'image' => 'assets/images/portfolio/logo/Logo5.webp',
+        'desc' => 'Brand mark built for high flexibility across digital, print, and social usage scenarios.'
     ],
     [
-        'title' => 'Lead Generation E-Book & Guide',
-        'cat' => 'Marketing',
-        'code' => 'marketing',
-        'image' => 'assets/images/portfolio/bp5.webp',
-        'desc' => 'Engaging multi-page lead magnet layout formatted for easy reading and conversion.'
+        'title' => 'Logo Design 05',
+        'cat' => 'Logo Design',
+        'code' => 'logo',
+        'image' => 'assets/images/portfolio/logo/Logo6.webp',
+        'desc' => 'Professional logo design focused on clarity, impact, and long-term positioning value.'
     ],
     [
-        'title' => 'Corporate Performance Report',
-        'cat' => 'Marketing',
-        'code' => 'marketing',
-        'image' => 'assets/images/portfolio/bp6.webp',
-        'desc' => 'Visually compelling annual report design featuring infographics and executive summaries.'
+        'title' => 'Logo Design 06',
+        'cat' => 'Logo Design',
+        'code' => 'logo',
+        'image' => 'assets/images/portfolio/logo/1.webp',
+        'desc' => 'Modern visual identity built to feel credible, strong, and adaptable for growth-focused brands.'
     ],
     [
-        'title' => 'Retail Product Packaging System',
-        'cat' => 'Marketing',
-        'code' => 'marketing',
-        'image' => 'assets/images/portfolio/bp7.webp',
-        'desc' => 'Eye-catching packaging and label design built to stand out in competitive marketplaces.'
-    ],
-    [
-        'title' => 'Trade Show & Event Collateral',
-        'cat' => 'Marketing',
-        'code' => 'marketing',
-        'image' => 'assets/images/portfolio/bp8.webp',
-        'desc' => 'High-resolution display graphics and printed materials for live conferences and events.'
-    ],
-    [
-        'title' => 'Targeted Digital Display Ads',
-        'cat' => 'Marketing',
-        'code' => 'marketing',
-        'image' => 'assets/images/portfolio/bp9.webp',
-        'desc' => 'Performance ad creative suite optimized for display networks and retargeting campaigns.'
-    ],
-    [
-        'title' => 'Content Marketing Visual Kit',
-        'cat' => 'Marketing',
-        'code' => 'marketing',
-        'image' => 'assets/images/portfolio/bp10.webp',
-        'desc' => 'Custom blog illustrations, infographic modules, and branded social assets.'
-    ],
-    [
-        'title' => 'Sales Enablement One-Pager',
-        'cat' => 'Marketing',
-        'code' => 'marketing',
-        'image' => 'assets/images/portfolio/bp11.webp',
-        'desc' => 'High-impact sales sheet providing prospects with clear value propositions and pricing.'
-    ],
-    [
-        'title' => 'Infographic & Data Visualization',
-        'cat' => 'Marketing',
-        'code' => 'marketing',
-        'image' => 'assets/images/portfolio/bp12.webp',
-        'desc' => 'Structured visual breakdown converting complex statistics into memorable, shareable insights.'
-    ],
-
-    // Automation & Dashboards
-    [
-        'title' => 'Real-Time Analytics & Funnel Dashboard',
-        'cat' => 'Automation',
-        'code' => 'automation',
-        'image' => 'assets/images/portfolio/original-1a8e877909336fa9afb95b337864bf47.webp',
-        'desc' => 'Live reporting console monitoring visitor traffic, lead pipeline stages, and conversion rates.'
-    ],
-    [
-        'title' => 'CRM Lead Automation Console',
-        'cat' => 'Automation',
-        'code' => 'automation',
-        'image' => 'assets/images/portfolio/original-a95fae93f827db9414b43038d4946ec4.webp',
-        'desc' => 'Automated lead distribution and follow-up tracking system for sales and support teams.'
-    ],
-    [
-        'title' => 'Customer Journey Tracking Portal',
-        'cat' => 'Automation',
-        'code' => 'automation',
-        'image' => 'assets/images/portfolio/original-14a4259428156323b5367c87a4a9136d.webp',
-        'desc' => 'Interactive campaign monitoring tool providing full transparency into lead acquisition channels.'
-    ],
-    [
-        'title' => 'Automated Lead Capture Workflow',
-        'cat' => 'Automation',
-        'code' => 'automation',
-        'image' => 'assets/images/portfolio/original-3ed6966095017bc72b02cf455e49c797.webp',
-        'desc' => 'Integrated multi-step intake flow connected directly to automated email sequences.'
-    ],
-    [
-        'title' => 'Custom Operations Management Portal',
-        'cat' => 'Automation',
-        'code' => 'automation',
-        'image' => 'assets/images/portfolio/original-050aee70d94f2ef1afaabba39fb0dc0e.webp',
-        'desc' => 'Centralized workflow management interface for tracking client deliverables and team tasks.'
-    ],
-    [
-        'title' => 'Mobile Project Status Tracker',
-        'cat' => 'Automation',
-        'code' => 'automation',
-        'image' => 'assets/images/portfolio/original-114e3628885d108cf861c6cefcec68c4.webp',
-        'desc' => 'Responsive mobile app interface allowing managers to review project updates on the go.'
-    ],
-    [
-        'title' => 'Enterprise Intelligence Dashboard',
-        'cat' => 'Automation',
-        'code' => 'automation',
-        'image' => 'assets/images/portfolio/original-990ba4668b4af4524de31a5e413ebaba.webp',
-        'desc' => 'Unified data hub consolidating web analytics, ad performance, and operational KPIs.'
-    ],
-    [
-        'title' => 'Automated Alert & Notification Hub',
-        'cat' => 'Automation',
-        'code' => 'automation',
-        'image' => 'assets/images/portfolio/original-d0898fdf8462c97d1eddc1b66877bf91.webp',
-        'desc' => 'Real-time alert dispatch interface routing high-value leads to the right team member.'
-    ],
-
-    // UI Systems & Components
-    [
-        'title' => 'Cross-Device Web Interface System',
-        'cat' => 'Web Design',
-        'code' => 'web',
-        'image' => 'assets/images/portfolio/types-img-1.png',
-        'desc' => 'Modular component library ensuring visual and functional consistency across all screens.'
-    ],
-    [
-        'title' => 'E-Commerce Conversion Checkout Flow',
-        'cat' => 'E-Commerce',
-        'code' => 'web',
-        'image' => 'assets/images/portfolio/types-img-2.png',
-        'desc' => 'Frictionless checkout UI designed to boost completion rates and order values.'
-    ],
-    [
-        'title' => 'Digital Brand Asset & Icon Library',
-        'cat' => 'Branding',
-        'code' => 'branding',
-        'image' => 'assets/images/portfolio/types-img-3.png',
-        'desc' => 'Structured brand kit featuring scalable vector icons, badges, and UI elements.'
-    ],
-    [
-        'title' => 'Social Campaign Creative Templates',
-        'cat' => 'Marketing',
-        'code' => 'marketing',
-        'image' => 'assets/images/portfolio/types-img-4.png',
-        'desc' => 'Flexible design layouts empowering marketing teams to produce consistent content fast.'
-    ],
-    [
-        'title' => 'Automated Multi-Step Lead System',
-        'cat' => 'Automation',
-        'code' => 'automation',
-        'image' => 'assets/images/portfolio/types-img-5.png',
-        'desc' => 'Intelligent form architecture with real-time field validation and routing logic.'
-    ],
-    [
-        'title' => 'Executive KPI & Growth Dashboard',
-        'cat' => 'Automation',
-        'code' => 'automation',
-        'image' => 'assets/images/portfolio/types-img-6.png',
-        'desc' => 'Executive-level metrics interface presenting revenue and customer acquisition trends.'
+        'title' => 'Logo Design 07',
+        'cat' => 'Logo Design',
+        'code' => 'logo',
+        'image' => 'assets/images/portfolio/logo/9.webp',
+        'desc' => 'Logo direction designed to maintain consistency across web, print, packaging, and marketing.'
     ]
 ];
 
 $cat_filter = isset($_GET['cat']) ? strtolower(trim($_GET['cat'])) : 'all';
 
 $filtered_items = [];
-if ($cat_filter !== 'all' && in_array($cat_filter, ['web', 'branding', 'marketing', 'automation'])) {
+if ($cat_filter !== 'all' && in_array($cat_filter, ['web', 'branding', 'logo'])) {
     foreach ($all_portfolio_items as $item) {
         if ($item['code'] === $cat_filter) {
             $filtered_items[] = $item;
@@ -357,7 +166,7 @@ $slice = array_slice($filtered_items, ($page - 1) * $per, $per);
       </div>
     </div>
     <div class="split-hero-media reveal">
-      <img src="assets/images/portfolio/port1.jpg" alt="Modern website design portfolio showcase">
+      <img src="assets/images/portfolio/logo/Logo1.webp" alt="Logo design portfolio showcase">
       <div class="hero-media-badge">
         <strong><?= count($all_portfolio_items) ?></strong>
         <span>featured projects</span>
@@ -374,10 +183,9 @@ $slice = array_slice($filtered_items, ($page - 1) * $per, $per);
       <span>Explore by capability</span>
       <div>
         <a href="?cat=all#portfolio-grid" class="filter-btn <?= $cat_filter==='all'?'active':'' ?>">All (<?= count($all_portfolio_items) ?>)</a>
-        <a href="?cat=web#portfolio-grid" class="filter-btn <?= $cat_filter==='web'?'active':'' ?>">Web Design</a>
+        <a href="?cat=web#portfolio-grid" class="filter-btn <?= $cat_filter==='web'?'active':'' ?>">Website</a>
         <a href="?cat=branding#portfolio-grid" class="filter-btn <?= $cat_filter==='branding'?'active':'' ?>">Branding</a>
-        <a href="?cat=marketing#portfolio-grid" class="filter-btn <?= $cat_filter==='marketing'?'active':'' ?>">Marketing</a>
-        <a href="?cat=automation#portfolio-grid" class="filter-btn <?= $cat_filter==='automation'?'active':'' ?>">Logos and Designs</a>
+        <a href="?cat=logo#portfolio-grid" class="filter-btn <?= $cat_filter==='logo'?'active':'' ?>">Logo Designs</a>
       </div>
     </div>
 
