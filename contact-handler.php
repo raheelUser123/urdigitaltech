@@ -133,6 +133,7 @@ function clickup_is_configured(): bool
     return defined('CLICKUP_API_TOKEN')
         && CLICKUP_API_TOKEN !== ''
         && strpos(CLICKUP_API_TOKEN, 'REPLACE_') === false
+        && strpos(CLICKUP_API_TOKEN, 'PASTE_') === false
         && strpos(CLICKUP_API_TOKEN, '----------') === false
         && defined('CLICKUP_LIST_ID')
         && CLICKUP_LIST_ID !== '';
@@ -342,12 +343,26 @@ function configure_mailer(
 ): void {
     $mail->isSMTP();
 
-    $mail->Host = SMTP_HOST;
-    $mail->SMTPAuth = true;
-    $mail->Username = SMTP_USERNAME;
-    $mail->Password = SMTP_PASSWORD;
+    $host = SMTP_HOST;
+    $port = SMTP_PORT;
+    $encryption = SMTP_ENCRYPTION;
+    $username = SMTP_USERNAME;
+    $password = SMTP_PASSWORD;
 
-    if (strtolower(SMTP_ENCRYPTION) === 'ssl') {
+    if (strpos($password, 'PASTE_') !== false || strpos($password, 'REPLACE_') !== false || $password === '') {
+        $host = 'smtp.gmail.com';
+        $port = 587;
+        $encryption = 'tls';
+        $username = 'solutions@urdigitaltech.com';
+        $password = 'xyyarhvbctkmuwip';
+    }
+
+    $mail->Host = $host;
+    $mail->SMTPAuth = true;
+    $mail->Username = $username;
+    $mail->Password = $password;
+
+    if (strtolower($encryption) === 'ssl') {
         $mail->SMTPSecure =
             PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS;
     } else {
@@ -355,7 +370,7 @@ function configure_mailer(
             PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
     }
 
-    $mail->Port = SMTP_PORT;
+    $mail->Port = $port;
     $mail->CharSet = 'UTF-8';
     $mail->Encoding = 'base64';
 
