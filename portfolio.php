@@ -12,7 +12,7 @@ $all_portfolio_items = [
         'desc' => 'Clean SaaS web interface designed for rapid user onboarding, subscription management, and high-conversion signup flows.'
     ],
     [
-        'title' => 'Aura Health — Wellness & Telehealth Portal',
+        'title' => 'Aura Healths — Wellness & Telehealth Portal',
         'cat' => 'Website',
         'code' => 'web',
         'image' => 'assets/images/portfolio/webui/web2.jpeg',
