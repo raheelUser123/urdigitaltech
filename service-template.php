@@ -22,5 +22,8 @@ include __DIR__ . '/includes/header.php';
 body.light .cta-panel.reveal.visible a.btn.btn-ghost {
     color: #fff;
 }
+body.light .hero-copy.reveal.visible a.btn.btn-ghost {
+    color: #fff;
+}
     </style>
 <?php include __DIR__ . '/includes/footer.php'; ?>
