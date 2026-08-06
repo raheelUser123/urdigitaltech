@@ -285,5 +285,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
-
+<style>
+  body.light header.hero.home-hero .cta-row a.btn.btn-ghost {
+    color: #fff;
+}
+</style>
 <?php include 'includes/footer.php'; ?>
