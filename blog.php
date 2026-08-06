@@ -279,6 +279,11 @@ if ($article):
     </div>
   </div>
 </section>
+<style>
+  body.light .container.split-hero-grid a.btn.btn-ghost {
+    color: #000;
+}
+  </style>
 <?php endif; ?>
 
 <?php include 'includes/footer.php'; ?>

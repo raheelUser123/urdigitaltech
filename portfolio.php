@@ -5,130 +5,151 @@ include 'includes/header.php';
 
 $all_portfolio_items = [
     [
-        'title' => 'Website Mockup 01',
+        'title' => 'NovaPay — Fintech & SaaS Platform',
         'cat' => 'Website',
         'code' => 'web',
         'image' => 'assets/images/portfolio/webui/web1.jpeg',
-        'desc' => 'Modern website showcase designed for a clean SaaS-style presentation and higher conversion flow.'
+        'desc' => 'Clean SaaS web interface designed for rapid user onboarding, subscription management, and high-conversion signup flows.'
     ],
     [
-        'title' => 'Website Mockup 02',
+        'title' => 'Aura Health — Wellness & Telehealth Portal',
         'cat' => 'Website',
         'code' => 'web',
         'image' => 'assets/images/portfolio/webui/web2.jpeg',
-        'desc' => 'Responsive digital layout with strong product positioning, clarity, and polished user journey cues.'
+        'desc' => 'Modern responsive digital portal built with patient trust, seamless appointment booking, and intuitive service discovery in mind.'
     ],
     [
-        'title' => 'Website Mockup 03',
+        'title' => 'Nexus Cloud — Enterprise Infrastructure Site',
         'cat' => 'Website',
         'code' => 'web',
         'image' => 'assets/images/portfolio/webui/web3.webp',
-        'desc' => 'Conversion-first web concept built to communicate service value with speed and confidence.'
+        'desc' => 'Conversion-focused enterprise website built to showcase cloud infrastructure solutions with speed and executive clarity.'
     ],
     [
-        'title' => 'Website Mockup 04',
+        'title' => 'Luxe Living — Real Estate & Property Showcase',
         'cat' => 'Website',
         'code' => 'web',
         'image' => 'assets/images/portfolio/webui/web4.webp',
-        'desc' => 'Premium product and portfolio presentation developed for a modern digital-first brand.'
+        'desc' => 'High-end digital property gallery with interactive walkthroughs, premium typography, and instant lead capture forms.'
     ],
     [
-        'title' => 'Website Mockup 05',
+        'title' => 'Apex Studio — Creative Agency Digital Hub',
         'cat' => 'Website',
         'code' => 'web',
         'image' => 'assets/images/portfolio/webui/web5.webp',
-        'desc' => 'High-impact homepage layout focused on trust, messaging clarity, and service positioning.'
+        'desc' => 'Dynamic agency portfolio website featuring fluid page transitions, dark-mode visual hierarchy, and service positioning.'
     ],
     [
-        'title' => 'Website Mockup 06',
+        'title' => 'Vanguard Capital — Wealth Management Web App',
         'cat' => 'Website',
         'code' => 'web',
         'image' => 'assets/images/portfolio/webui/web6.webp',
-        'desc' => 'Clean, structured website concept designed to highlight conversion paths and product credibility.'
+        'desc' => 'Structured financial web portal presenting complex advisory services with credibility, interactive tools, and clear CTA paths.'
     ],
     [
-        'title' => 'Branding Concept 01',
+        'title' => 'Verde Organics — Sustainable Brand Identity',
         'cat' => 'Branding',
         'code' => 'branding',
         'image' => 'assets/images/portfolio/branding/1.jpg',
-        'desc' => 'Brand identity concept with a premium, strategic look tailored to modern business positioning.'
+        'desc' => 'Complete eco-friendly brand identity system featuring organic color palettes, sustainable packaging guidelines, and minimalist typography.'
     ],
     [
-        'title' => 'Branding Concept 02',
+        'title' => 'Solstice Energy — CleanTech Visual System',
         'cat' => 'Branding',
         'code' => 'branding',
         'image' => 'assets/images/portfolio/branding/2.jpg',
-        'desc' => 'Visual identity direction built around clarity, trust, and memorable modern brand signals.'
+        'desc' => 'Strategic visual identity direction built around modern energy signals, high-impact brand collateral, and market differentiation.'
     ],
     [
-        'title' => 'Branding Concept 03',
+        'title' => 'Urban Craft — Boutique Hospitality Branding',
         'cat' => 'Branding',
         'code' => 'branding',
         'image' => 'assets/images/portfolio/branding/3.jpg',
-        'desc' => 'Creative branding exploration balancing polished presentation with clear market differentiation.'
+        'desc' => 'Sophisticated branding exploration balancing premium print collateral, custom iconography, and memorable guest touchpoints.'
     ],
     [
-        'title' => 'Branding Concept 04',
+        'title' => 'Kinetix Performance — Athletic Wear Brand Guide',
         'cat' => 'Branding',
         'code' => 'branding',
         'image' => 'assets/images/portfolio/branding/4.jpg',
-        'desc' => 'Modern brand direction using typography, composition, and strong visual rhythm for recognition.'
+        'desc' => 'High-energy sportswear brand system using bold typography, athletic rhythm, and flexible identity assets across digital and apparel.'
     ],
     [
-        'title' => 'Branding Concept 05',
+        'title' => 'Meridian Global — Executive Advisory Guidelines',
         'cat' => 'Branding',
         'code' => 'branding',
         'image' => 'assets/images/portfolio/branding/5.jpg',
-        'desc' => 'Fresh brand system designed to elevate perception and support a stronger digital presence.'
+        'desc' => 'Elevated corporate brand identity built to instill trust and authority across investor decks, stationery, and digital channels.'
     ],
     [
-        'title' => 'Logo Design 01',
+        'title' => 'Artisan Coffee Co. — Specialty Roast Brand System',
+        'cat' => 'Branding',
+        'code' => 'branding',
+        'image' => 'assets/images/portfolio/branding/port1.jpg',
+        'desc' => 'Craft brand identity featuring artisan packaging textures, custom stamp marks, and retail visual assets.'
+    ],
+    [
+        'title' => 'Zenith AI — Geometric Tech Mark',
         'cat' => 'Logo Design',
         'code' => 'logo',
         'image' => 'assets/images/portfolio/logo/Logo1.webp',
-        'desc' => 'Logo concept crafted to feel professional, scalable, and easy to apply across online platforms.'
+        'desc' => 'Scalable geometric icon and wordmark engineered for seamless adaptability across mobile apps, dark UI, and print collateral.'
     ],
     [
-        'title' => 'Logo Design 02',
+        'title' => 'Pulse Care — Medical & Life Sciences Symbol',
         'cat' => 'Logo Design',
         'code' => 'logo',
         'image' => 'assets/images/portfolio/logo/Logo3.webp',
-        'desc' => 'Distinct brand symbol developed for a clean, modern, and memorable digital-first identity.'
+        'desc' => 'Clean human-centric symbol blending medical cross and vital wave motifs for modern healthcare branding.'
     ],
     [
-        'title' => 'Logo Design 03',
+        'title' => 'Hyperion Cyber — Defense & Security Crest',
         'cat' => 'Logo Design',
         'code' => 'logo',
         'image' => 'assets/images/portfolio/logo/Logo4.webp',
-        'desc' => 'Creative logo exploration with strong shape language for technology, service, and brand recognition.'
+        'desc' => 'Bold shield icon crafted for cyber-defense platforms, communicating resilience, encryption, and enterprise trust.'
     ],
     [
-        'title' => 'Logo Design 04',
+        'title' => 'Orbit Logistics — Global Supply Chain Emblem',
         'cat' => 'Logo Design',
         'code' => 'logo',
         'image' => 'assets/images/portfolio/logo/Logo5.webp',
-        'desc' => 'Brand mark built for high flexibility across digital, print, and social usage scenarios.'
+        'desc' => 'Dynamic interconnected vector emblem representing speed, global connectivity, and streamlined logistics.'
     ],
     [
-        'title' => 'Logo Design 05',
+        'title' => 'EcoFlow — Renewable Energy Brandmark',
         'cat' => 'Logo Design',
         'code' => 'logo',
         'image' => 'assets/images/portfolio/logo/Logo6.webp',
-        'desc' => 'Professional logo design focused on clarity, impact, and long-term positioning value.'
+        'desc' => 'Fluid leaf-and-wave monogram crafted for green tech startups and clean energy initiatives.'
     ],
     [
-        'title' => 'Logo Design 06',
+        'title' => 'Veloce Motors — Luxury Automotive Insignia',
         'cat' => 'Logo Design',
         'code' => 'logo',
         'image' => 'assets/images/portfolio/logo/1.webp',
-        'desc' => 'Modern visual identity built to feel credible, strong, and adaptable for growth-focused brands.'
+        'desc' => 'Sleek metallic insignia designed for high-performance automotive and luxury transport branding.'
     ],
     [
-        'title' => 'Logo Design 07',
+        'title' => 'Strata Analytics — Data & Intelligence Emblem',
         'cat' => 'Logo Design',
         'code' => 'logo',
         'image' => 'assets/images/portfolio/logo/9.webp',
-        'desc' => 'Logo direction designed to maintain consistency across web, print, packaging, and marketing.'
+        'desc' => 'Precision data node emblem built to express intelligence, growth metrics, and cloud analytics.'
+    ],
+    [
+        'title' => 'Horizon Capital — Venture Fund Identity Mark',
+        'cat' => 'Logo Design',
+        'code' => 'logo',
+        'image' => 'assets/images/portfolio/logo/logo2.webp',
+        'desc' => 'Minimalist financial brandmark representing upward growth, strategic vision, and investment authority.'
+    ],
+    [
+        'title' => 'Crestview Law — Legal Practice Monogram',
+        'cat' => 'Logo Design',
+        'code' => 'logo',
+        'image' => 'assets/images/portfolio/logo/logo6.webp',
+        'desc' => 'Classic monogram emblem refined for modern law firms, combining traditional prestige with crisp digital aesthetics.'
     ]
 ];
 

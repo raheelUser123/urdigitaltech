@@ -152,7 +152,7 @@ function email_layout(
     margin:0;
     padding:0;
     background:#eef3fb;
-    font-family:Arial,Helvetica,sans-serif;
+    font-family:Poppins,Arial,Helvetica,sans-serif;
     color:#111827;
 ">
     <div style="
