@@ -20,6 +20,9 @@ body.light{--bg:#f7f9ff;--surface:#fff;--text:#11162a;--muted:#5f6b84;--line:#dc
 body.light h2#modal-title {
     color: #fff;
 }
+body.light .query-popup h2, body.light .query-popup p, body.light .query-popup a.btn.btn-ghost {
+    color: #fff ! IMPORTANT;
+}
 body.light aside#side-panel a.btn.btn-primary {
     color: #000 !important;
 }
