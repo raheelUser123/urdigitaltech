@@ -20,6 +20,9 @@ body.light{--bg:#f7f9ff;--surface:#fff;--text:#11162a;--muted:#5f6b84;--line:#dc
 body.light h2#modal-title {
     color: #fff;
 }
+body.light aside#side-panel a.btn.btn-primary {
+    color: #000 !important;
+}
 body.light .price-card.reveal.visible a {
     color: #000;
 }
