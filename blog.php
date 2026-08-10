@@ -158,8 +158,8 @@ if ($article):
         <span><?= htmlspecialchars($article['read_time']) ?></span>
       </div>
       <div class="cta-row article-cta-row">
-        <a class="btn btn-primary" href="blog">Back to articles</a>
-        <a class="btn btn-ghost" href="contact.php">Request a project</a>
+        <a class="btn btn-primary" href="<?= $base_path ?>blog">Back to articles</a>
+        <a class="btn btn-ghost" href="<?= $base_path ?>contact">Request a project</a>
       </div>
     </div>
     <div class="split-hero-media reveal">
@@ -203,7 +203,7 @@ if ($article):
         <li>Use follow-up systems to support the first conversion path.</li>
       </ul>
       <div class="side-cta">
-        <a class="btn btn-primary" href="contact.php">Talk with our team</a>
+        <a class="btn btn-primary" href="<?= $base_path ?>contact">Talk with our team</a>
       </div>
     </aside>
   </div>
@@ -217,7 +217,7 @@ if ($article):
     </div>
     <div class="blog-grid related-grid">
       <?php foreach ($related as $related_post): ?>
-        <a class="blog-card reveal" href="blog/<?= urlencode($related_post['slug']) ?>">
+        <a class="blog-card reveal" href="<?= $base_path ?>blog/<?= urlencode($related_post['slug']) ?>">
           <div class="blog-card-image"><img src="<?= htmlspecialchars($related_post['image']) ?>" alt="<?= htmlspecialchars($related_post['title']) ?>"></div>
           <div class="blog-card-copy">
             <span class="blog-category"><?= htmlspecialchars($related_post['category']) ?></span>
@@ -240,8 +240,8 @@ if ($article):
       <h1>Articles</h1>
       <p class="lead">Practical ideas for better websites, stronger marketing, smoother operations, and smarter business growth.</p>
       <div class="cta-row article-cta-row">
-        <a class="btn btn-primary" href="contact.php">Book a strategy call</a>
-        <a class="btn btn-ghost" href="services.php">Explore services</a>
+        <a class="btn btn-primary" href="<?= $base_path ?>contact">Book a strategy call</a>
+        <a class="btn btn-ghost" href="<?= $base_path ?>services">Explore services</a>
       </div>
     </div>
     <div class="split-hero-media reveal">
@@ -262,7 +262,7 @@ if ($article):
     </div>
     <div class="blog-grid">
       <?php foreach ($articles as $slug => $post): ?>
-        <a class="blog-card reveal" href="blog/<?= urlencode($slug) ?>">
+        <a class="blog-card reveal" href="<?= $base_path ?>blog/<?= urlencode($slug) ?>">
           <div class="blog-card-image"><img src="<?= htmlspecialchars($post['image']) ?>" alt="<?= htmlspecialchars($post['title']) ?>"></div>
           <div class="blog-card-copy">
             <div class="blog-card-meta">
