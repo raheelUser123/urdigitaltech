@@ -1,8 +1,4 @@
 <?php
-$page_title = 'Articles | URDigital Tech';
-$page_description = 'Explore practical articles on digital strategy, web design, business operations, marketing, and growth.';
-include 'includes/header.php';
-
 $articles = [
   'website-clarity-that-converts' => [
     'title' => 'Why website clarity beats flashy design every time',
@@ -128,7 +124,14 @@ if ($requested_slug && isset($articles[$requested_slug])) {
   $article = $articles[$requested_slug];
   $page_title = htmlspecialchars($article['title']) . ' | URDigital Tech';
   $page_description = $article['excerpt'];
+  $canonical_path = 'blog/' . $requested_slug;
+} else {
+  $page_title = 'Articles | URDigital Tech';
+  $page_description = 'Explore practical articles on digital strategy, web design, business operations, marketing, and growth.';
+  $canonical_path = 'blog';
 }
+
+include 'includes/header.php';
 
 if ($article):
   $related = [];
@@ -155,7 +158,7 @@ if ($article):
         <span><?= htmlspecialchars($article['read_time']) ?></span>
       </div>
       <div class="cta-row article-cta-row">
-        <a class="btn btn-primary" href="blog.php">Back to articles</a>
+        <a class="btn btn-primary" href="blog">Back to articles</a>
         <a class="btn btn-ghost" href="contact.php">Request a project</a>
       </div>
     </div>
@@ -214,7 +217,7 @@ if ($article):
     </div>
     <div class="blog-grid related-grid">
       <?php foreach ($related as $related_post): ?>
-        <a class="blog-card reveal" href="blog.php?slug=<?= urlencode($related_post['slug']) ?>">
+        <a class="blog-card reveal" href="blog/<?= urlencode($related_post['slug']) ?>">
           <div class="blog-card-image"><img src="<?= htmlspecialchars($related_post['image']) ?>" alt="<?= htmlspecialchars($related_post['title']) ?>"></div>
           <div class="blog-card-copy">
             <span class="blog-category"><?= htmlspecialchars($related_post['category']) ?></span>
@@ -259,7 +262,7 @@ if ($article):
     </div>
     <div class="blog-grid">
       <?php foreach ($articles as $slug => $post): ?>
-        <a class="blog-card reveal" href="blog.php?slug=<?= urlencode($slug) ?>">
+        <a class="blog-card reveal" href="blog/<?= urlencode($slug) ?>">
           <div class="blog-card-image"><img src="<?= htmlspecialchars($post['image']) ?>" alt="<?= htmlspecialchars($post['title']) ?>"></div>
           <div class="blog-card-copy">
             <div class="blog-card-meta">

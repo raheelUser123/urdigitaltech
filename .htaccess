@@ -33,7 +33,12 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} ^(.+)/$
 RewriteRule ^ %1 [R=301,L]
 
-# 3. Internal rewrite to add .php extension for existing PHP files
+# 3. Internal rewrite for blog post URLs: /blog/article-slug -> blog.php?slug=article-slug
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/([a-zA-Z0-9-]+)/?$ blog.php?slug=$1 [QSA,L]
+
+# 4. Internal rewrite to add .php extension for existing PHP files
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^/]+)$ $1.php [NC,L]

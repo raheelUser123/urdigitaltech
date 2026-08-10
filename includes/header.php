@@ -2,16 +2,28 @@
 if (!isset($page_title)) $page_title = 'URDigital Tech — Digital, Creative & Business Services';
 if (!isset($page_description)) $page_description = 'URDigital Tech helps businesses grow with web, marketing, design, consulting and operational support.';
 if (!isset($canonical_path)) $canonical_path = basename($_SERVER['PHP_SELF']);
+
+if (substr($canonical_path, -4) === '.php') {
+    $canonical_path = substr($canonical_path, 0, -4);
+}
+if ($canonical_path === 'index' || $canonical_path === '') {
+    $canonical_url = 'https://urdigitaltech.com/';
+} else {
+    $canonical_url = 'https://urdigitaltech.com/' . ltrim($canonical_path, '/');
+}
+
 $current_page = basename($_SERVER['PHP_SELF']);
 $all_services = require __DIR__ . '/../data.php';
-function service_url($slug){ return $slug . '.php'; }
+if (!function_exists('service_url')) {
+    function service_url($slug){ return $slug . '.php'; }
+}
 ?>
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title><?= htmlspecialchars($page_title) ?></title>
 <meta name="description" content="<?= htmlspecialchars($page_description) ?>">
-<link rel="canonical" href="https://urdigitaltech.com/<?= htmlspecialchars($canonical_path === 'index.php' ? '' : $canonical_path) ?>">
-<meta property="og:type" content="website"><meta property="og:title" content="<?= htmlspecialchars($page_title) ?>"><meta property="og:description" content="<?= htmlspecialchars($page_description) ?>">
+<link rel="canonical" href="<?= htmlspecialchars($canonical_url) ?>">
+<meta property="og:type" content="website"><meta property="og:title" content="<?= htmlspecialchars($page_title) ?>"><meta property="og:description" content="<?= htmlspecialchars($page_description) ?>"><meta property="og:url" content="<?= htmlspecialchars($canonical_url) ?>">
 <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
 <meta name="theme-color" content="#080b19">
 <link rel="icon" href="assets/images/favicon-square.png" sizes="any" type="image/png">

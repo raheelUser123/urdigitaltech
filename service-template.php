@@ -4,7 +4,7 @@ if (!isset($service_slug) || !isset($services[$service_slug])) { http_response_c
 $s = $services[$service_slug];
 $page_title = $s['title'] . ' Services | URDigital Tech';
 $page_description = $s['description'];
-$canonical_path = $service_slug . '.php';
+$canonical_path = $service_slug;
 include __DIR__ . '/includes/header.php';
 ?>
 <header class="hero service-hero"><div class="hero-grid-bg"></div><div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div><div class="container hero-layout"><div class="hero-copy reveal"><div class="eyebrow">Strategy · Design · Technology</div><h1><?= htmlspecialchars($s['title']) ?> that moves your business forward.</h1><p class="lead"><?= htmlspecialchars($s['description']) ?></p><div class="cta-row"><a class="btn btn-primary" href="contact.php?service=<?= urlencode($s['title']) ?>">Start your project →</a><a class="btn btn-ghost" href="schedule.php?service=<?= urlencode($s['title']) ?>">Book a strategy call ↗</a></div><div class="hero-proof"><span>✓ Clear milestones</span><span>✓ Responsive delivery</span><span>✓ SEO-ready foundations</span></div></div><div class="service-visual reveal"><div class="visual-window"><div class="window-dots"><i></i><i></i><i></i></div><img src="<?= htmlspecialchars($s['image']) ?>" alt="<?= htmlspecialchars($s['title']) ?> service"></div><div class="float-stat stat-a"><strong>20+</strong><span>Specialist services</span></div><div class="float-stat stat-b"><strong>24/7</strong><span>Lead capture</span></div></div></div></header>
