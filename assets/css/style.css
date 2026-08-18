@@ -18,22 +18,30 @@ body.light{--bg:#f7f9ff;--surface:#fff;--text:#11162a;--muted:#5f6b84;--line:#dc
     margin: 10px auto;
 }
 body.light h2#modal-title {
-    color: #fff;
+    color: var(--text);
 }
-body.light .query-popup h2, body.light .query-popup p, body.light .query-popup a.btn.btn-ghost {
-    color: #fff ! IMPORTANT;
+body.light .query-popup-card {
+    background: #fff;
+    color: var(--text);
+    border-color: var(--line);
+}
+body.light .query-popup h2, body.light .query-popup p {
+    color: var(--text);
+}
+body.light .query-popup a.btn.btn-ghost {
+    color: var(--text);
 }
 body.light aside#side-panel a.btn.btn-primary {
-    color: #000 !important;
-}
-body.light .price-card.reveal.visible a {
     color: #000;
 }
+body.light .price-card.reveal.visible a {
+    color: inherit;
+}
 body.light .cta-panel.reveal.primary-cta-panel.visible a.btn.btn-ghost {
-    color: #fff;
+    color: var(--text);
 }
 body.light .query-popup-content.portfolio-modal-content a.btn.btn-ghost {
-    color: #fff;
+    color: var(--text);
 }
 body.light .form-card label, .form-field {
     color: #fff;
@@ -590,15 +598,19 @@ body.light .blog-card,body.light .blog-article-card,body.light .blog-side-card{b
 body.light .blog-card-copy p,body.light .blog-content p,body.light .blog-content h2,body.light .article-tags span,body.light .blog-side-card h3,body.light .blog-side-card .check-list li{color:#101827}
 body.light .article-tags span{background:#f1f5f9}
 body.light .blog-content blockquote{background:#ebf7ff;border-left-color:#0ea5e9}
+body.light aside#side-panel {
+    background: #fff;
+    color: var(--text);
+}
 body.light aside#side-panel a.brand img {
-    filter: brightness(0) invert(1);
+    filter: none;
 }
 body.light .panel-contact a, body.light .panel-contact p {
-    color: #fff !important;
+    color: var(--text);
 }
 body.light nav.panel-nav a,
 body.light nav.panel-nav details {
-    color: #fff;
+    color: var(--text);
 }
 @media(max-width:1024px){.showcase-grid-4{grid-template-columns:repeat(2,1fr);gap:18px}.web-showcase-card img{height:380px}.branding-showcase-card img{height:280px}.logo-showcase-card img{height:260px}}
 @media(max-width:650px){

@@ -1,4 +1,10 @@
 <?php
+if (!headers_sent()) {
+    header('Strict-Transport-Security: max-age=31536000; includeSubDomains; preload');
+    header('X-Frame-Options: SAMEORIGIN');
+    header('Cache-Control: max-age=3600, must-revalidate');
+}
+
 if (!isset($base_path)) {
     $doc_root = rtrim(str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT'] ?? ''), '/');
     $site_root = rtrim(str_replace('\\', '/', dirname(__DIR__)), '/');
@@ -13,6 +19,7 @@ if (!isset($base_path)) {
 
 if (!isset($page_title)) $page_title = 'URDigital Tech — Digital, Creative & Business Services';
 if (!isset($page_description)) $page_description = 'URDigital Tech helps businesses grow with web, marketing, design, consulting and operational support.';
+if (!isset($page_image)) $page_image = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80';
 if (!isset($canonical_path)) $canonical_path = basename($_SERVER['PHP_SELF']);
 
 if (substr($canonical_path, -4) === '.php') {
@@ -32,6 +39,64 @@ if (!function_exists('service_url')) {
         return ($base_path ?? '/') . $slug;
     }
 }
+
+// Prepare JSON-LD Structured Data
+$json_ld = [
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Organization',
+            '@id' => 'https://urdigitaltech.com/#organization',
+            'name' => 'URDigital Tech',
+            'url' => 'https://urdigitaltech.com/',
+            'logo' => [
+                '@type' => 'ImageObject',
+                'url' => 'https://urdigitaltech.com/assets/images/favicon-square.png'
+            ],
+            'contactPoint' => [
+                '@type' => 'ContactPoint',
+                'telephone' => '+1-716-400-0769',
+                'contactType' => 'customer service',
+                'email' => 'solutions@urdigitaltech.com',
+                'areaServed' => 'US',
+                'availableLanguage' => ['English']
+            ],
+            'address' => [
+                '@type' => 'PostalAddress',
+                'addressLocality' => 'Buffalo',
+                'addressRegion' => 'NY',
+                'addressCountry' => 'US'
+            ],
+            'sameAs' => [
+                'https://urdigitaltech.com/'
+            ]
+        ],
+        [
+            '@type' => 'WebSite',
+            '@id' => 'https://urdigitaltech.com/#website',
+            'url' => 'https://urdigitaltech.com/',
+            'name' => 'URDigital Tech',
+            'description' => 'URDigital Tech helps businesses grow with web, marketing, design, consulting and operational support.',
+            'publisher' => [
+                '@id' => 'https://urdigitaltech.com/#organization'
+            ]
+        ],
+        [
+            '@type' => 'WebPage',
+            '@id' => $canonical_url . '#webpage',
+            'url' => $canonical_url,
+            'name' => $page_title,
+            'description' => $page_description,
+            'isPartOf' => [
+                '@id' => 'https://urdigitaltech.com/#website'
+            ]
+        ]
+    ]
+];
+
+if (isset($page_schema) && is_array($page_schema)) {
+    $json_ld['@graph'][] = $page_schema;
+}
 ?>
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -39,8 +104,22 @@ if (!function_exists('service_url')) {
 <title><?= htmlspecialchars($page_title) ?></title>
 <meta name="description" content="<?= htmlspecialchars($page_description) ?>">
 <link rel="canonical" href="<?= htmlspecialchars($canonical_url) ?>">
-<meta property="og:type" content="website"><meta property="og:title" content="<?= htmlspecialchars($page_title) ?>"><meta property="og:description" content="<?= htmlspecialchars($page_description) ?>"><meta property="og:url" content="<?= htmlspecialchars($canonical_url) ?>">
-<meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="<?= htmlspecialchars($page_title) ?>">
+<meta property="og:description" content="<?= htmlspecialchars($page_description) ?>">
+<meta property="og:url" content="<?= htmlspecialchars($canonical_url) ?>">
+<meta property="og:image" content="<?= htmlspecialchars($page_image) ?>">
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<?= htmlspecialchars($page_title) ?>">
+<meta name="twitter:description" content="<?= htmlspecialchars($page_description) ?>">
+<meta name="twitter:image" content="<?= htmlspecialchars($page_image) ?>">
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+<?= json_encode($json_ld, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE) ?>
+
+</script>
 <meta name="theme-color" content="#080b19">
 <link rel="icon" href="<?= $base_path ?>assets/images/favicon-square.png" sizes="any" type="image/png">
 <link rel="shortcut icon" href="<?= $base_path ?>assets/images/favicon-square.png" type="image/png">
