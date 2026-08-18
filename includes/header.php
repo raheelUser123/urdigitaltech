@@ -40,7 +40,7 @@ if (!function_exists('service_url')) {
     }
 }
 
-// Prepare JSON-LD Structured Data
+// JSON-LD Structured Data
 $json_ld = [
     '@context' => 'https://schema.org',
     '@graph' => [
